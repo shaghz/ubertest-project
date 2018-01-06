@@ -1,3 +1,5 @@
+$primary-color: #111;
+
 html,
 body {
     margin: 0;
@@ -10,7 +12,9 @@ body {
     font-family: ff-clan-web-pro, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 16px;
 } 
-
+.navbar{
+    padding:0 60px ;
+}
 .text {
     position: absolute;
     right: 0;
@@ -20,9 +24,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
-.uk-navbar-container navbar{
-    color:#Fff !important;
-}
+
 .uber-logo{
     width: 72px;
     height: 16px;

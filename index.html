@@ -19,9 +19,10 @@
 
 <body>
     <!-- section navbar -->
-    <div class="uk-container uk-container-large uk-padding-remove">
-    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
-            <nav class="uk-navbar-container navbar" uk-navbar="dropbar: true;" style="position: relative; z-index: 980;">
+    <div class="uk-container uk-container-large uk-padding-large uk-padding-remove-top">
+
+    <div  uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+            <nav class="uk-navbar-container " uk-navbar="dropbar: true;" style="position: relative; z-index: 980;">
                 <div class="uk-navbar-left">
         
                     <ul class="uk-navbar-nav">
@@ -41,7 +42,7 @@
                             </div></li>
                         <li>
                             <a href="#">Drive</a>
-                            <div class="uk-navbar-dropdown">
+                            <div class="uk-navbar-dropdown ">
                                 <ul class="uk-nav uk-navbar-dropdown-nav">
                                     <li class="uk-active"><a href="#">Active</a></li>
                                     <li><a href="#">Item</a></li>
@@ -52,11 +53,22 @@
                     </ul>
                    
                 </div>
-            </nav>
-            
-        </div>
-    
-
+                <div class="uk-navbar-right">
+        
+                        <ul class="uk-navbar-nav">
+                            <li>
+                                    <button class="uk-button uk-button-primary  uk-width-1-1 uk-margin-top  ">Button</button>
+                            </li>
+                            <li>
+                                    <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
+                            </li>
+                            
+                        </ul>
+                       
+                    </div>
+            </div>
+       
+      
     <div class="clear"></div>
     <div class="section">
         <div class="text">
@@ -69,6 +81,8 @@
         <div class="background-section first-section-picture">
         </div>
     </div>
+</div>
+     
 </div>
    <!-- section footer -->
 <!-- 
