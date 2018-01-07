@@ -9,47 +9,131 @@ body {
   font-family: ff-clan-web-pro, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 16px; }
 
-.navbar {
-  padding: 0 60px; }
-
-.text {
-  position: absolute;
-  right: 0; }
-
-a {
-  text-decoration: none;
-  color: inherit; }
-
 .uber-logo {
   width: 72px;
   height: 16px; }
 
+.uk-navbar {
+  height: 60px !important;
+  background-color: #fff; }
+  .uk-navbar a {
+    height: 60px !important;
+    color: black !important;
+    text-decoration: none; }
+
+.uk-navbar-right button {
+  margin-top: 12px;
+  padding: 4px;
+  background-color: #178B94; }
+.uk-navbar-right img {
+  padding-top: 18px;
+  padding-right: 10px; }
+
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: grey; }
+
+.section-one p {
+  font-size: 36px; }
+.section-one .text {
+  padding: 0 84px; }
+.section-one form {
+  padding: 32px;
+  background-color: #F8F8FA;
+  display: inline-block;
+  position: absolute;
+  min-width: 400px; }
+  .section-one form input {
+    padding: 25px; }
+  .section-one form img {
+    width: 60px !important; }
+  .section-one form a {
+    color: #178B94; }
+  .section-one form i {
+    color: #178B94; }
+  .section-one form .rules {
+    margin-top: 40px; }
+  .section-one form .or-line h2 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(187, 187, 187, 0.651);
+    line-height: 0.1em;
+    margin: 15px 0 20px; }
+    .section-one form .or-line h2 span {
+      background-color: #F8F8FA;
+      padding: 20px 8px;
+      padding-bottom: 20px !important;
+      font-size: 10px; }
+  .section-one form .main {
+    margin-left: 32px; }
+  .section-one form p {
+    font-size: 10px; }
+.section-one button {
+  background-color: #178B94; }
+  .section-one button span {
+    float: right;
+    padding-top: 10px; }
+.section-one .indivual {
+  margin-top: 10px; }
+
+.driver {
+  position: absolute;
+  z-index: -1;
+  padding-top: 30px;
+  width: 1600px;
+  height: 570px; }
+
+.blank {
+  height: 600px; }
+
+.section-two {
+  padding: 102px 20px;
+  margin: 0 220px 0 220px;
+  position: relative; }
+  .section-two .image {
+    width: 120px;
+    height: 120px; }
+  .section-two button {
+    background-color: #178B94; }
+
+.driver {
+  position: absolute;
+  z-index: -1;
+  padding-top: 30px;
+  width: 1560px;
+  height: 460px; }
+
+.part-two {
+  padding-top: 80px; }
+
+.pricing {
+  padding-top: 80px; }
+  .pricing h2 {
+    margin: 0px;
+    font-size: 40px; }
+  .pricing p {
+    margin: 0px;
+    font-size: 30px; }
+  .pricing a {
+    padding: 0 0 0 40px; }
+
+.location {
+  padding-right: 100px; }
+
+#arrow {
+  background-color: #999;
+  padding: 10px 0;
+  color: white; }
+
 .button-members {
   margin-top: 50px; }
-
-.button {
-  text-align: center;
-  padding: 10px 20px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
 
 .form-block {
   width: 300px;
   left: 0;
   right: 0;
   margin: 30px auto 0; }
-
-button {
-  display: block;
-  width: 300px;
-  height: 30px;
-  background-color: black;
-  color: white;
-  border: none;
-  font-size: 16px; }
 
 .menu-options {
   padding-top: 10px;
