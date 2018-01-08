@@ -78,13 +78,12 @@ a {
       font-size: 10px; }
   .section-one button {
     background-color: #178B94; }
-    .section-one button button:hover {
-      background-color: #0F6D77; }
-    .section-one button span {
-      float: right;
-      padding-top: 10px; }
+  .section-one button:hover {
+    background-color: #0d545c !important; }
   .section-one .indivual {
     margin-top: 16px; }
+  .section-one a:hover {
+    color: #0d545c; }
 
 .driver {
   position: relative;
@@ -129,20 +128,20 @@ a {
   position: relative; }
 
 .input {
-  border: 1px solid rgba(182, 182, 182, 0.705);
+  border: 1px solid #e5e5e4;
   padding: 8px 12px 6px 29px; }
   .input input {
     border: 0;
     padding-right: 16px; }
   .input span {
-    top: 9px;
-    right: 14px;
     color: #C6C6C6;
     cursor: pointer;
     font-size: 20px;
     font-size: 1.42857rem;
     line-height: 1.4;
     float: right; }
+    .input span svg {
+      padding-bottom: 40px !important; }
 
 .pricing {
   padding-top: 80px; }
