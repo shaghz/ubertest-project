@@ -7,24 +7,29 @@ body {
 
 body {
   font-family: ff-clan-web-pro, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  background-color: #e5e5e4; }
+
+a {
+  text-decoration: none !important; }
 
 .uber-logo {
   width: 72px;
   height: 16px; }
 
 .uk-navbar {
-  height: 60px !important;
-  background-color: #fff; }
+  background-color: #fff;
+  padding: 0 145px; }
   .uk-navbar a {
     height: 60px !important;
-    color: black !important;
-    text-decoration: none; }
+    color: black !important; }
 
 .uk-navbar-right button {
   margin-top: 12px;
   padding: 4px;
   background-color: #178B94; }
+.uk-navbar-right button:hover {
+  background-color: #0F6D77; }
 .uk-navbar-right img {
   padding-top: 18px;
   padding-right: 10px; }
@@ -34,78 +39,110 @@ body {
   height: 400px;
   background-color: grey; }
 
-.section-one p {
-  font-size: 36px; }
-.section-one .text {
-  padding: 0 84px; }
-.section-one form {
-  padding: 32px;
-  background-color: #F8F8FA;
-  display: inline-block;
-  position: absolute;
-  min-width: 400px; }
-  .section-one form input {
-    padding: 25px; }
-  .section-one form img {
-    width: 60px !important; }
-  .section-one form a {
-    color: #178B94; }
-  .section-one form i {
-    color: #178B94; }
-  .section-one form .rules {
-    margin-top: 40px; }
-  .section-one form .or-line h2 {
-    width: 100%;
-    text-align: center;
-    border-bottom: 1px solid rgba(187, 187, 187, 0.651);
-    line-height: 0.1em;
-    margin: 15px 0 20px; }
-    .section-one form .or-line h2 span {
-      background-color: #F8F8FA;
-      padding: 20px 8px;
-      padding-bottom: 20px !important;
+.section-one {
+  padding: 20px !important;
+  margin: 0 220px 0 220px !important; }
+  .section-one p {
+    font-size: 36px; }
+  .section-one form {
+    padding: 32px;
+    background-color: #F8F8FA;
+    display: inline-block;
+    z-index: 1;
+    position: absolute;
+    min-width: 400px; }
+    .section-one form input {
+      padding: 25px; }
+    .section-one form img {
+      width: 60px !important; }
+    .section-one form a {
+      color: #178B94; }
+    .section-one form i {
+      color: #178B94; }
+    .section-one form .rules {
+      margin-top: 40px; }
+    .section-one form .or-line h2 {
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid rgba(187, 187, 187, 0.651);
+      line-height: 0.1em;
+      margin: 15px 0 20px; }
+      .section-one form .or-line h2 span {
+        background-color: #F8F8FA;
+        padding: 20px 8px;
+        padding-bottom: 20px !important;
+        font-size: 10px; }
+    .section-one form .main {
+      margin-left: 32px; }
+    .section-one form p {
       font-size: 10px; }
-  .section-one form .main {
-    margin-left: 32px; }
-  .section-one form p {
-    font-size: 10px; }
-.section-one button {
-  background-color: #178B94; }
-  .section-one button span {
-    float: right;
-    padding-top: 10px; }
-.section-one .indivual {
-  margin-top: 10px; }
+  .section-one button {
+    background-color: #178B94; }
+    .section-one button button:hover {
+      background-color: #0F6D77; }
+    .section-one button span {
+      float: right;
+      padding-top: 10px; }
+  .section-one .indivual {
+    margin-top: 16px; }
 
 .driver {
-  position: absolute;
-  z-index: -1;
+  position: relative;
   padding-top: 30px;
   width: 1600px;
-  height: 570px; }
+  height: 460px; }
 
 .blank {
-  height: 600px; }
+  height: 200px; }
 
 .section-two {
-  padding: 102px 20px;
-  margin: 0 220px 0 220px;
+  padding: 102px 40px 102px 220px;
   position: relative; }
   .section-two .image {
     width: 120px;
     height: 120px; }
   .section-two button {
     background-color: #178B94; }
+  .section-two button:hover {
+    background-color: #0F6D77; }
+  .section-two .arrow {
+    display: flex;
+    background-color: #178B94;
+    padding-right: 8px;
+    color: #fff;
+    align-items: center; }
 
-.driver {
+.section-two.text {
   position: absolute;
-  z-index: -1;
-  padding-top: 30px;
-  width: 1560px;
-  height: 460px; }
+  z-index: 1; }
+
+.section-three {
+  width: 100% !important;
+  background-image: url("../images/desk (2).jpg") !important; }
+
+.section-four {
+  width: 100% !important;
+  background-image: url("../images/desk.jpg") !important; }
 
 .part-two {
-  padding-top: 80px; }
+  padding: 102px 40px 102px 220px;
+  position: relative; }
+
+.input {
+  border: 1px solid rgba(182, 182, 182, 0.705);
+  padding: 8px 12px 6px 29px; }
+  .input input {
+    border: 0;
+    padding-right: 16px; }
+  .input span {
+    top: 9px;
+    right: 14px;
+    color: #C6C6C6;
+    cursor: pointer;
+    font-size: 20px;
+    font-size: 1.42857rem;
+    line-height: 1.4;
+    float: right; }
 
 .pricing {
   padding-top: 80px; }
@@ -121,23 +158,32 @@ body {
 .location {
   padding-right: 100px; }
 
-#arrow {
-  background-color: #999;
-  padding: 10px 0;
-  color: white; }
+.section-five {
+  height: 1200px;
+  background-color: #F8F8F9; }
+  .section-five ul {
+    height: 750px !important; }
 
-.button-members {
-  margin-top: 50px; }
+svg {
+  padding-left: 20px; }
 
-.form-block {
-  width: 300px;
-  left: 0;
-  right: 0;
-  margin: 30px auto 0; }
+.caption {
+  padding: 40px; }
 
-.menu-options {
-  padding-top: 10px;
-  padding-bottom: 10px; }
+.s-card {
+  width: 50%;
+  padding: 0 0 20px 0  !important; }
+  .s-card p {
+    margin: 16px; }
+
+.section-two.part-seven {
+  background-color: #F8F8F9 !important; }
+
+.uk-container {
+  background-color: #fff;
+  width: 80%;
+  z-index: -5;
+  padding: 0px !important; }
 
 .clear {
   height: 55px;
@@ -145,54 +191,50 @@ body {
   clear: both;
   position: relative; }
 
-.section {
-  width: 100%;
-  clear: both;
-  position: relative;
-  height: auto;
-  overflow: auto;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-.background-section {
-  background-size: cover;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  height: 500px;
-  background-position: center;
-  color: #555; }
-
-label {
-  font-size: 12px;
-  float: left;
-  width: 33.33%;
-  text-align: center;
-  font-weight: bold; }
-
-hr {
-  width: 90%; }
-
-.footer-block {
-  width: 300px;
-  float: left; }
-
 .footer {
-  background-color: black;
-  color: white; }
+  padding: 102px 40px 0 0;
+  background-color: #111;
+  position: relative;
+  right: -20px; }
 
-.horizontal-line-footer {
-  margin-bottom: 15px; }
+.main {
+  padding: 0px 245px 0 0px; }
+  .main hr {
+    margin-left: 150px !important; }
+  .main img {
+    color: white;
+    background-color: #111; }
+  .main a {
+    text-decoration: none;
+    color: white; }
+  .main span {
+    padding-right: 10px; }
 
-.bottom-footer {
-  width: 100%;
-  clear: both;
-  padding-top: 10px;
-  text-align: center;
-  padding-bottom: 10px; }
+.main:last-child {
+  padding-bottom: 80px; }
 
-svg {
-  padding-left: 20px; }
+.devide {
+  padding: 0px 0 0 50px; }
+  .devide div {
+    margin: 20px; }
+  .devide ul {
+    list-style-type: none; }
+  .devide li {
+    padding-bottom: 12px;
+    color: white; }
+
+.main.uk-card.uk-card-body {
+  background-color: #111;
+  width: 300px !important; }
+
+#bottom {
+  margin-top: 200px; }
+
+.countries {
+  font-size: 15px; }
+  .countries div {
+    margin: 4px 0; }
+  .countries a {
+    margin-left: 7px; }
 
 /*# sourceMappingURL=styles.css.map */

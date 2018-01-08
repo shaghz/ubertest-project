@@ -1,7 +1,22 @@
 $primary-color: #111;
-$uber-green: #178B94;
-$margin-top: 10px;
+$magic-green: #178B94;
+$margin: 16px;
 $image-size: 120px;
+$magic-white:#fff;
+$magic-gray:#F8F8F9;
+@mixin magic-dest{
+    padding:102px 40px 102px 220px;
+
+    position: relative;
+ 
+  }
+@mixin arrow($color){
+    display:flex;
+    background-color: $color;
+    padding-right: 8px;
+    color:$magic-white;
+    align-items: center;
+}
 html,
 body {
     margin: 0;
@@ -10,36 +25,42 @@ body {
     overflow-x: hidden;
     
 }
+
 body {
     font-family: ff-clan-web-pro, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 16px;
+    background-color: #e5e5e4;
+  
 } 
 
-
-
+a{
+    text-decoration: none !important;
+}
 .uber-logo{
     width: 72px;
     height: 16px;
 
+
 }
 .uk-navbar{
-    height:60px !important;
-    background-color: #fff;
+    background-color: $magic-white;
+    padding:0 145px; 
     a{
         height:60px !important;
         color:black !important;
-        text-decoration: none;
+       
     }
    
 }
 .uk-navbar-right{
- 
-
 
     button{
         margin-top:12px;
         padding:4px;
-        background-color: $uber-green;
+        background-color: $magic-green;
+    }
+    button:hover{
+        background-color: #0F6D77;
     }
     img{
         padding-top:18px;
@@ -53,17 +74,17 @@ body {
     background-color: grey;
   }
 .section-one{
+    padding:20px !important;
+    margin:0 220px 0 220px !important;
     p{
         font-size:36px;
     }
-    .text{
-        padding: 0 84px;
-    }
+   
     form{
         padding:32px;
         background-color: #F8F8FA;
         display:inline-block;
-       
+       z-index:1;
         position: absolute;
         min-width:400px;
         input{
@@ -73,10 +94,10 @@ body {
            width:60px !important;
         }
         a{
-            color:$uber-green;
+            color:$magic-green;
         }
         i{
-            color: $uber-green;
+            color: $magic-green;
         }
         .rules{
             margin-top:40px;
@@ -90,7 +111,7 @@ body {
                  line-height:0.1em; 
                  margin:15px 0 20px;
                    span {
-                       background-color: #F8F8FA;
+                        background-color: #F8F8FA;
                         padding:20px 8px ;
                         padding-bottom: 20px !important;
                         font-size: 10px;
@@ -108,7 +129,10 @@ body {
         }
     }
     button{
-        background-color: $uber-green;
+        background-color: $magic-green;
+        button:hover{
+            background-color: #0F6D77;
+        }
         span{
             float:right;
             padding-top:10px;
@@ -116,46 +140,77 @@ body {
     }
    
       .indivual{
-        margin-top:$margin-top;
+        margin-top:$margin;
       }
 }
 
 
 .driver{
-    position: absolute;
-    z-index: -1;
-   padding-top: 30px;
+    position: relative;
+  
+    padding-top: 30px;
     width:1600px;
-    height:570px;
+    height:460px;
+
+  
 }
 .blank{
-    height:600px;
+    height:200px;
 }
 
 .section-two{
-    padding:102px 20px;
-    margin:0 220px 0 220px;
-    position: relative;
- 
+    @include magic-dest();
+    
     .image{
         width:120px;
         height:120px;
     }
     button{
-        background-color: $uber-green;
-    }
-   
-}
+        background-color: $magic-green;
 
-.driver{
+    }
+    button:hover{
+       
+            background-color: #0F6D77;
+    }
+   .arrow{
+       @include arrow($magic-green)
+   }
+}
+.section-two.text{
     position: absolute;
-    z-index: -1;
-   padding-top: 30px;
-    width:1560px;
-    height:460px;
+    z-index:1;
+}
+.section-three{
+    width:100% !important;
+    background-image: url('../images/desk (2).jpg') !important;
+}
+.section-four{
+    width:100% !important;
+    background-image: url('../images/desk.jpg') !important;
 }
 .part-two{
-    padding-top:80px;
+    @include magic-dest();
+}
+
+.input{
+    border :1px solid rgba(182, 182, 182, 0.705);
+    padding: 8px 12px 6px 29px;
+   
+    input{
+        border:0;
+        padding-right: 16px;
+    }
+    span{
+        top: 9px;
+        right: 14px;
+        color: #C6C6C6;
+        cursor: pointer;
+        font-size: 20px;
+        font-size: 1.42857rem;
+        line-height: 1.4;
+        float:right;
+    }
 }
 .pricing{
     padding-top:80px;
@@ -174,95 +229,106 @@ body {
 .location{
     padding-right:100px;
 }
-#arrow{
-    background-color: #999;
-    padding:10px 0 ;
-    
-    color:white;
+
+.section-five{
+    height:1200px;
+    background-color: 	$magic-gray;
+    ul{
+        height:750px !important;
+       
+    }
+
+}
+
+svg{
+    padding-left:20px;
+}
+
+.caption{
+    padding:40px;
+}
+.s-card{
+    p{
+        margin: $margin;
+    }
+    width:50%;
+    padding:0 0 20px 0  !important;
+
+}
+
+.section-two.part-seven{
+    background-color: $magic-gray !important;
+}
+
+.uk-container{
+  background-color: #fff;
+  width:80%;
+  z-index:-5;
+  padding:0px !important;
 }
 
 
 
-
-
-.button-members {
-    margin-top: 50px;
-}
-
-
-.form-block {
-    width: 300px;
-    left: 0;
-    right: 0;
-    margin: 30px auto 0;
-}
-
-.menu-options {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
 .clear {
     height: 55px;
     width: 100px;
     clear: both;
     position: relative;
 }
-
-.section {
-    width: 100%;
-    clear: both;
+.footer{
+    padding:102px 40px 0 0;
+    background-color: #111;
     position: relative;
-    height: auto;
-    overflow: auto;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    right:-20px;
 }
-
-.background-section {
-    background-size: cover;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    height: 500px;
-    background-position: center; 
-    color:#555;
+.main{
+    padding: 0px 245px 0 0px;
+    hr{
+        margin-left:150px !important;
+    }
+    img{
+        color:white;
+        background-color: #111;
+    }
+    a{
+        text-decoration: none;
+        color:white;
+    }
+    span{
+        padding-right:10px;
+    }
 }
-
-label {
-    font-size: 12px;
-    float: left;
-    width: 33.33%;
-    text-align: center;
-    font-weight: bold;
+.main:last-child{
+    padding-bottom:80px;
 }
-
-
-
-
-hr {
-    width: 90%;
+.devide{
+    padding:0px 0 0 50px ;
+    div{
+        margin:20px;
+    }
+    ul{
+        list-style-type: none;
+    }
+    li{
+        padding-bottom:12px;
+        color:white;
+    }
 }
-.footer-block {
-    width: 300px;
-    float: left;
+.main.uk-card.uk-card-body{
+    background-color: #111;
+    width:300px !important;
 }
-
-.footer {
-    background-color: black;
-    color: white;
+#bottom{
+   
+margin-top:200px;
+    
 }
-.horizontal-line-footer {
-    margin-bottom: 15px;
-}
-.bottom-footer {
-    width: 100%;
-    clear: both;
-    padding-top: 10px;
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-svg{
-    padding-left:20px;
+.countries{
+font-size:15px;
+    div{
+        margin:4px  0 ;
+    }
+    a{
+        margin-left:7px;
+    }
 }
