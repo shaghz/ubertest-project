@@ -6,31 +6,35 @@ body {
   overflow-x: hidden; }
 
 body {
-  font-family: ff-clan-web-pro, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'FF Clan Pro Narrow Thin';
   font-size: 16px;
   background-color: #e5e5e4; }
 
-.vl {
-  border-left: 1px solid black;
-  height: 65px;
-  position: absolute;
-  z-index: 1;
-  bottom: 240px;
-  left: 235px; }
-
-a {
+a:hover {
   text-decoration: none !important; }
 
 .uber-logo {
-  width: 72px;
-  height: 16px; }
+  width: 72px !important;
+  height: 16px !important; }
 
 .uk-navbar {
   background-color: #fff;
-  padding: 0 145px; }
+  padding: 0 145px 0 145px; }
   .uk-navbar a {
     height: 60px !important;
-    color: black !important; }
+    color: black !important;
+    padding-left: 0 20px;
+    font-size: 12px; }
+  .uk-navbar a:hover {
+    color: #377037 !important; }
+  .uk-navbar li {
+    border-top: 4px solid #fff; }
+
+.logo {
+  padding-left: 0px !important; }
+
+.nav-item:hover {
+  border-top: 4px solid #377037; }
 
 .uk-navbar-right button {
   margin-top: 12px;
@@ -41,24 +45,49 @@ a {
 .uk-navbar-right img {
   padding-top: 18px;
   padding-right: 10px; }
+.uk-navbar-right a {
+  padding: 0 6px; }
+.uk-navbar-right a.uk-navbar-toggle {
+  padding: 0 24px !important; }
+.uk-navbar-right ul li:nth-child(5) a {
+  padding-right: 0px !important; }
+.uk-navbar-right ul li:nth-child(-n+2) a {
+  padding: 0 6px !important; }
 
-#map {
-  width: 100%;
-  height: 400px;
-  background-color: grey; }
+.driver {
+  position: relative;
+  padding-top: 20px;
+  width: 1600px;
+  height: 560px; }
+
+.blank {
+  height: 200px; }
+
+.header2 {
+  width: 800px !important;
+  margin-top: 0 !important; }
+
+.part-two {
+  padding: 120px 103px 80px; }
+
+.video object {
+  min-height: 600px;
+  background-color: #DDDDDD; }
 
 .section-one {
-  padding: 20px !important;
+  padding: 44px 10px  !important;
   margin: 0 220px 0 220px !important; }
   .section-one p {
     font-size: 36px; }
   .section-one form {
+    margin-left: 65px;
     padding: 32px;
     background-color: #F8F8FA;
     display: inline-block;
     z-index: 1;
     position: absolute;
-    min-width: 400px; }
+    min-width: 400px;
+    border-top: 8px solid #f1f1f1 !important; }
     .section-one form input {
       padding: 25px; }
     .section-one form img {
@@ -77,8 +106,7 @@ a {
       margin: 15px 0 20px; }
       .section-one form .or-line h2 span {
         background-color: #F8F8FA;
-        padding: 20px 8px;
-        padding-bottom: 20px !important;
+        padding: 20px 8px 32px 8px;
         font-size: 10px; }
     .section-one form .main {
       margin-left: 32px; }
@@ -86,80 +114,106 @@ a {
       font-size: 10px; }
   .section-one button {
     background-color: #178B94; }
+    .section-one button span {
+      float: right;
+      margin-top: 8px; }
   .section-one button:hover {
-    background-color: #0d545c !important; }
+    background-color: #0F6D77 !important; }
   .section-one .indivual {
     margin-top: 16px; }
   .section-one a:hover {
     color: #0d545c; }
 
-.driver {
-  position: relative;
-  padding-top: 30px;
-  width: 1600px;
-  height: 530px; }
-
-.blank {
-  height: 200px; }
-
-.header2 {
-  width: 800px !important; }
-
 .section-two {
-  padding: 102px 40px 102px 220px;
-  position: relative; }
+  padding: 0px 145px; }
   .section-two .image {
     width: 120px;
     height: 120px; }
   .section-two button {
-    background-color: #178B94; }
+    background-color: #178B94;
+    padding-right: 0; }
   .section-two button:hover {
-    background-color: #0F6D77; }
+    background-color: #0F6D77;
+    color: white !important; }
+  .section-two span {
+    margin-right: 30px;
+    margin-left: 25px; }
   .section-two .arrow {
     display: flex;
     background-color: #178B94;
     padding-right: 8px;
     color: #fff;
-    align-items: center; }
-
-.section-two.part-two {
-  padding-right: 280px !important;
-  padding-top: 0px !important; }
-
-.section-two.text {
-  position: absolute;
-  z-index: 1; }
+    align-items: center;
+    margin-left: 32px; }
+  .section-two .text {
+    position: absolute;
+    z-index: 1; }
 
 .section-three {
   width: 100% !important;
-  background-image: url("../images/desk (2).jpg") !important; }
+  height: 70vh !important;
+  background-position: center !important;
+  background-image: url("../images/desk (2).jpg") !important;
+  position: relative !important; }
 
 .section-four {
   width: 100% !important;
+  height: 70vh !important;
+  background-position: center !important;
   background-image: url("../images/desk.jpg") !important; }
 
-.part-two {
-  padding: 102px 40px 102px 220px;
-  position: relative; }
+.section-five {
+  background-color: #F8F8F9;
+  padding: 80px 103px 10px !important; }
+  .section-five h2 {
+    padding: 0 !important; }
 
-.input {
-  border: 1px solid #e5e5e4;
-  padding: 8px 12px 6px 29px;
-  margin-bottom: 20px; }
-  .input input {
-    border: 0;
-    padding-right: 16px; }
-  .input input:focus {
-    outline: none; }
-  .input span {
-    color: #C6C6C6;
-    cursor: pointer;
-    font-size: 20px;
-    font-size: 1.42857rem;
-    line-height: 1.4;
-    float: right; }
-    .input span svg {
-      padding-bottom: 40px !important; }
+.uk-dotnav a {
+  background-color: #fff !important;
+  color: #e5e5e4;
+  width: 13px;
+  height: 13px; }
+.uk-dotnav .uk-active a {
+  margin-top: 3px;
+  background-color: #178B94 !important;
+  width: 5px;
+  height: 5px; }
+
+.dots a {
+  background-color: #178B94;
+  color: white; }
+
+.section-six {
+  padding: 80px 93px 52px !important;
+  background-color: #F8F8F9; }
+  .section-six .arrow {
+    padding-right: 30px; }
+  .section-six .arrow:hover {
+    fill: #0F6D77; }
+
+.picturetext {
+  padding: 80px 103px !important;
+  position: relative !important;
+  width: 100% !important;
+  z-index: 2 !important; }
+  .picturetext a {
+    color: #178B94; }
+  .picturetext a:hover {
+    color: #0F6D77; }
+  .picturetext h3 {
+    margin: 0px !important; }
+
+.written {
+  padding: 50px 0 !important;
+  width: 50% !important; }
+  .written p {
+    padding-right: 150px; }
+
+.connector .arrow {
+  background-color: #e5e5e4;
+  padding-left: 8px !important; }
+  .connector .arrow svg {
+    width: 30px; }
 
 .pricing {
   padding-top: 80px; }
@@ -175,14 +229,10 @@ a {
 .location {
   padding-right: 100px; }
 
-.section-five {
-  height: 1200px;
-  background-color: #F8F8F9; }
-  .section-five ul {
-    height: 750px !important; }
-
-svg {
-  padding-left: 20px; }
+.map {
+  padding: 80px 0; }
+  .map h2 {
+    margin-bottom: 24px; }
 
 .caption {
   padding: 40px; }
@@ -193,59 +243,98 @@ svg {
   .s-card p {
     margin: 16px; }
 
-.section-two.part-seven {
-  background-color: #F8F8F9 !important; }
-
 .uk-container {
   background-color: #fff;
-  width: 80%;
+  width: 85%;
   z-index: -5;
   padding: 0px !important; }
 
 .footer {
-  padding: 102px 40px 0 0;
-  background-color: #111;
-  position: relative;
-  right: -20px; }
-
-.main {
-  padding: 0px 245px 0 0px; }
-  .main hr {
-    margin-left: 150px !important; }
-  .main img {
+  padding: 102px 145px 0 145px;
+  background-color: #000;
+  position: relative; }
+  .footer .main hr {
+    border-color: rgba(128, 128, 128, 0.315); }
+  .footer .main img {
     color: white;
     background-color: #111; }
-  .main a {
+  .footer .main a {
     text-decoration: none;
     color: white; }
-  .main span {
+  .footer .main a:hover {
+    color: gray; }
+  .footer .main span {
     padding-right: 10px; }
-
-.main:last-child {
-  padding-bottom: 80px; }
-
-.devide {
-  padding: 0px 0 0 50px; }
-  .devide div {
-    margin: 20px; }
-  .devide ul {
-    list-style-type: none; }
-  .devide li {
+  .footer .main.uk-card.uk-card-body {
+    background-color: #111;
+    width: 300px !important; }
+  .footer .main:last-child {
+    padding-bottom: 80px; }
+  .footer .countries {
+    font-size: 15px; }
+    .footer .countries div {
+      margin: 4px 0; }
+    .footer .countries a {
+      margin-left: 7px; }
+  .footer .devide div {
+    margin-bottom: 20px; }
+  .footer .devide ul {
+    list-style-type: none;
+    padding-left: 0 !important; }
+  .footer .devide li {
     padding-bottom: 12px;
     color: white; }
+  .footer .header {
+    padding: 10px 0; }
 
-.main.uk-card.uk-card-body {
-  background-color: #111;
-  width: 300px !important; }
+.layout .left {
+  width: 50%; }
+.layout .right {
+  width: 50%;
+  display: inline-block; }
+
+.uk-button-secondary {
+  background-color: #fff !important;
+  color: black !important;
+  font-style: bold; }
+
+.uk-button-secondary:hover {
+  background-color: #ddd9d9 !important; }
+
+.uk-button-default:hover {
+  background-color: #fff !important;
+  color: black !important; }
+
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: grey; }
 
 #bottom {
   margin-top: 200px; }
 
-.countries {
-  font-size: 15px; }
-  .countries div {
-    margin: 4px 0; }
-  .countries a {
-    margin-left: 7px; }
+@media only screen and (max-width: 1000px) {
+  .uk-container {
+    width: 100%; }
+
+  .section-one {
+    margin-left: 48px !important;
+    margin-right: 48px !important; }
+
+  .section-two {
+    padding-left: 5px !important;
+    padding-right: 5px !important; }
+
+  .part-two {
+    padding-left: 5px !important;
+    padding-right: 5px !important; }
+
+  .uk-navbar {
+    padding-left: 48px !important;
+    padding-right: 48px !important; }
+
+  .footer {
+    padding-left: 48px !important;
+    padding-right: 48px !important; } }
 
 /*# sourceMappingURL=styles.css.map */

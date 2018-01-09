@@ -4,10 +4,11 @@ $margin: 16px;
 $image-size: 120px;
 $magic-white:#fff;
 $magic-gray:#F8F8F9;
+
 @mixin magic-dest{
-    padding:102px 40px 102px 220px;
+    padding:102px 145px 102px 145px;
     position: relative;
- 
+    font-size:18px;
   }
 @mixin arrow($color){
     display:flex;
@@ -16,49 +17,65 @@ $magic-gray:#F8F8F9;
     color:$magic-white;
     align-items: center;
 }
+@mixin imgbk{
+    width:100% !important;
+    height:70vh !important;
+    background-position: center !important;
 
+}
 html,
 body {
     margin: 0;
     padding: 0;
     width: 100%;
     overflow-x: hidden;
-    
+   
 }
 
 body {
-    font-family: ff-clan-web-pro, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: 'FF Clan Pro Narrow Thin';
     font-size: 16px;
     background-color: #e5e5e4;
   
 } 
-.vl {
-    border-left: 1px solid black;
-    height: 65px;
-    position: absolute;
-    z-index:1;
-   bottom:240px;
-   left:235px;
-}
 
-  
-a{
+a:hover{
     text-decoration: none !important;
 }
 
 .uber-logo{
-    width: 72px;
-    height: 16px;
+    width: 72px !important;
+    height: 16px !important;
+   
 }
+
 .uk-navbar{
     background-color: $magic-white;
-    padding:0 145px; 
+    padding:0 145px 0 145px; 
+
     a{
         height:60px !important;
         color:black !important;
+        padding-left:0 20px ;
+        font-size:12px;
     }
-   
+
+    a:hover{
+        color:#377037 !important;
+    }
+    
+    li{
+        border-top :4px solid #fff ;
+    }
+  
 }
+.logo{
+    padding-left:0px!important;
+}
+.nav-item:hover{
+    border-top :4px solid #377037 ;
+}
+
 .uk-navbar-right{
 
     button{
@@ -73,75 +90,128 @@ a{
         padding-top:18px;
         padding-right:10px;
     }
-}
-
-#map {
-    width: 100%;
-    height: 400px;
-    background-color: grey;
-  }
-.section-one{
-    padding:20px !important;
-    margin:0 220px 0 220px !important;
-    p{
-        font-size:36px;
+    a{
+        padding:0 6px;
     }
-   
-    form{
-        padding:32px;
-        background-color: #F8F8FA;
-        display:inline-block;
-        z-index:1;
-        position: absolute;
-        min-width:400px;
-        input{
-            padding:25px;
-        }
-        img{
-           width:60px !important;
-        }
-        a{
-            color:$magic-green;
-        }
-        i{
-            color: $magic-green;
-        }
-        .rules{
-            margin-top:40px;
-        }
-
-        .or-line{
-            h2 {
-                 width:100%;
-                 text-align:center; 
-                 border-bottom: 1px solid rgba(187, 187, 187, 0.651); 
-                 line-height:0.1em; 
-                 margin:15px 0 20px;
-                   span {
-                        background-color: #F8F8FA;
-                        padding:20px 8px ;
-                        padding-bottom: 20px !important;
-                        font-size: 10px;
-                     }
-               } 
+    a.uk-navbar-toggle{
+        padding:0 24px !important;
+    }
+    ul{
+        li:nth-child(5){
+            a{
+               padding-right:0px !important;
+            }
             
         }
+        li:nth-child(-n+2){
+           a{
+               padding:0 6px !important;
+           }
+        }
+   }
+}
 
-        .main{
-            margin-left:32px;
-                
-        }
+.driver{
+    position: relative;
+    padding-top: 20px;
+    width:1600px;
+    height:560px;
+
+}
+
+.blank{
+    height:200px;
+}
+
+.header2{
+    width:800px !important;
+    margin-top:0 !important;
+}
+
+.part-two{
+  padding:120px 103px 80px;
+}
+
+
+.part-six{
+ 
+    }
+
+.video{
+    object{
+        min-height:600px;
+        background-color: #DDDDDD;
+    }
+}
+
+.section-one{
+    padding:44px 10px  !important;
+    margin:0 220px 0 220px !important;
         p{
-            font-size:10px;
+            font-size:36px;
         }
+    
+        form{
+            margin-left:65px;
+            padding:32px;
+            background-color: #F8F8FA;
+            display:inline-block;
+            z-index:1;
+            position: absolute;
+            min-width:400px;
+            border-top: 8px solid #f1f1f1 !important;
+            
+            input{
+                padding:25px;
+            }
+            img{
+            width:60px !important;
+            }
+            a{
+                color:$magic-green;
+            }
+            i{
+                color: $magic-green;
+            }
+            .rules{
+                margin-top:40px;
+            }
+
+            .or-line{
+                h2 {
+                    width:100%;
+                    text-align:center; 
+                    border-bottom: 1px solid rgba(187, 187, 187, 0.651); 
+                    line-height:0.1em; 
+                    margin:15px 0 20px;
+                    span {
+                            background-color: #F8F8FA;
+                            padding:20px 8px 32px 8px ;
+                
+                            font-size: 10px;
+                        }
+                } 
+                
+            }
+
+            .main{
+                margin-left:32px;
+                    
+            }
+            p{
+                font-size:10px;
+            }
     }
 
     button{
         background-color: $magic-green;
-       
+       span{
+        float:right;
+        margin-top:8px;
+       }
     }
     button:hover{
-        background-color: rgb(13, 84, 92) !important;
+        background-color: #0F6D77!important;
     }
    
       .indivual{
@@ -152,86 +222,126 @@ a{
     }
 }
 
-
-.driver{
-    position: relative;
-  
-    padding-top: 30px;
-    width:1600px;
-    height:530px;
-
-  
-}
-.blank{
-    height:200px;
-}
-.header2{
-    width:800px !important;
-}
 .section-two{
-    @include magic-dest();
     
+    padding:0px 145px;
     .image{
         width:120px;
         height:120px;
     }
     button{
         background-color: $magic-green;
-
+        padding-right:0;
     }
     button:hover{
-       
-            background-color: #0F6D77;
+        background-color: #0F6D77;
+        color:white !important;
+    }
+    span{
+        margin-right:30px;
+        margin-left:25px;
     }
    .arrow{
-       @include arrow($magic-green)
+       @include arrow($magic-green);
+       margin-left:32px;
+      
    }
-}
-.section-two.part-two{
-    padding-right:280px !important;
-    padding-top: 0px !important;
-}
-.section-two.text{
+    .text{
     position: absolute;
     z-index:1;
-}
-.section-three{
-    width:100% !important;
-    background-image: url('../images/desk (2).jpg') !important;
-}
-.section-four{
-    width:100% !important;
-    background-image: url('../images/desk.jpg') !important;
-}
-.part-two{
-    @include magic-dest();
+    }
+   
 }
 
-.input{
-    border :1px solid #e5e5e4;;
-    padding: 8px 12px 6px 29px;
-    margin-bottom:20px;
-    input{
-        border:0;
-        padding-right: 16px;
+.section-three{
+    @include imgbk();
+    background-image: url('../images/desk (2).jpg') !important;
+    position: relative !important;
+}
+
+.section-four{
+    @include imgbk();
+    background-image: url('../images/desk.jpg') !important;
+   
+}
+
+.section-five{
+    background-color: 	$magic-gray;
+    padding: 80px 103px 10px!important;
+ h2{
+     padding:0!important;
+ }
+ 
+}
+.uk-dotnav{
+a{
+    background-color:  #fff !important;
+    color: #e5e5e4;
+    width:13px;
+    height:13px;
+
     
+}
+.uk-active{
+    a{
+    margin-top:3px;
+    background-color:  $magic-green !important;
+    width:5px;
+    height:5px;
     }
-    input:focus {
-        outline: none;
+}
+}
+.dots{
+    a{
+        background-color: $magic-green;
+        color:white;
     }
-    span{ 
-        color: #C6C6C6;
-        cursor: pointer;
-        font-size: 20px;
-        font-size: 1.42857rem;
-        line-height: 1.4;
-        float:right;
-        svg{
-            padding-bottom:40px !important;
+}
+.section-six{
+    padding: 80px 93px 52px!important;      
+    background-color: 	$magic-gray;
+    .arrow{
+        padding-right:30px;
+    }
+    .arrow:hover{
+        fill:#0F6D77;
+    }
+}
+
+.picturetext{
+    padding: 80px 103px!important;
+    position: relative !important;
+    width: 100% !important;
+    z-index: 2 !important;
+
+        a{
+            color:$magic-green;
         }
-        
+        a:hover{
+            color:#0F6D77;
+        }
+        h3{
+            margin:0px !important;
+        }
+}
+
+.written{
+    padding:50px 0 !important;
+    width: 50% !important;
+    
+    p{
+        padding-right:150px;
     }
-  
+}
+
+.connector{
+  .arrow{
+        background-color:  #e5e5e4;
+        padding-left:8px !important;
+        svg{
+         width:30px;
+        }
+    }
 }
 .pricing{
     padding-top:80px;
@@ -250,20 +360,15 @@ a{
 .location{
     padding-right:100px;
 }
-
-.section-five{
-    height:1200px;
-    background-color: 	$magic-gray;
-    ul{
-        height:750px !important;
-       
+.map{
+    padding:80px 0 ;
+    h2{
+        margin-bottom:24px;
     }
-
 }
 
-svg{
-    padding-left:20px;
-}
+
+
 
 .caption{
     padding:40px;
@@ -277,70 +382,133 @@ svg{
 
 }
 
-.section-two.part-seven{
-    background-color: $magic-gray !important;
-}
-
 .uk-container{
   background-color: #fff;
-  width:80%;
+  width:85%;
   z-index:-5;
   padding:0px !important;
 }
 
-
 .footer{
-    padding:102px 40px 0 0;
-    background-color: #111;
+    padding:102px 145px 0 145px;
+    background-color: #000;
     position: relative;
-    right:-20px;
-}
-.main{
-    padding: 0px 245px 0 0px;
-    hr{
-        margin-left:150px !important;
+    .main{
+        hr{
+            border-color: rgba(128, 128, 128, 0.315);
+        }
+        img{
+            color:white;
+            background-color: #111;
+        }
+        a{
+            text-decoration: none;
+            color:white;
+        }
+        a:hover{
+            color:gray;
+        }
+        span{
+            padding-right:10px;
+    
+        }
     }
-    img{
-        color:white;
+    .main.uk-card.uk-card-body{
         background-color: #111;
+        width:300px !important;
     }
-    a{
-        text-decoration: none;
-        color:white;
+    .main:last-child{
+        padding-bottom:80px;
     }
-    span{
-        padding-right:10px;
+
+    .countries{
+        font-size:15px;
+            div{
+                margin:4px  0 ;
+            }
+            a{
+                margin-left:7px;
+            }
+    }
+    .devide{
+
+        div{
+            margin-bottom:20px;
+        }
+        ul{
+            list-style-type: none;
+            padding-left: 0 !important;
+        }
+        li{
+            padding-bottom:12px;
+            color:white;
+        }
+    }
+    .header{
+        padding:10px 0;
+    }
+
+}
+
+.layout{
+    .left{
+        width:50%;
+    }
+    .right{
+        width:50%;
+        display: inline-block;
     }
 }
-.main:last-child{
-    padding-bottom:80px;
+.uk-button-secondary {
+    background-color: #fff !important ;
+    color:black !important ;
+    font-style: bold;
 }
-.devide{
-    padding:0px 0 0 50px ;
-    div{
-        margin:20px;
-    }
-    ul{
-        list-style-type: none;
-    }
-    li{
-        padding-bottom:12px;
-        color:white;
-    }
+.uk-button-secondary:hover {
+  background-color: rgb(221, 217, 217) !important;
 }
-.main.uk-card.uk-card-body{
-    background-color: #111;
-    width:300px !important;
+.uk-button-default:hover{
+    background-color: #fff !important;
+    color:black !important;
+}
+
+
+
+
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
 }
 #bottom{
     margin-top:200px;
 }
-.countries{
-    font-size:15px;
-        div{
-            margin:4px  0 ;
-        }
-        a{
-            margin-left:7px;
-        }
+
+
+
+@media only screen and (max-width: 1000px) { 
+    .uk-container{
+        width:100%;
+ 
+    }
+    .section-one{
+        margin-left: 48px !important;
+        margin-right: 48px !important;
+    }
+    .section-two{
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+    .part-two{
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+    .uk-navbar{
+        padding-left: 48px !important;
+        padding-right: 48px !important;
+    }
+    .footer{
+        padding-left: 48px !important;
+        padding-right: 48px !important;
+    }
 }
