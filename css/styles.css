@@ -26,8 +26,8 @@ body {
   padding: 25px 20px !important; }
 
 h1, h2, h3, h4, h5 {
-  font-family: "My Custom Font" !important;
-  font-weight: 400 !important;
+  font-family: "My Custom Font";
+  font-weight: 400;
   margin: 0 !important;
   line-height: 32px;
   color: #111; }
@@ -131,7 +131,7 @@ a:hover {
   margin-top: 0 !important; }
 
 .part-two {
-  padding: 120px 103px 80px; }
+  padding: 150px 103px 80px; }
 
 .video object {
   min-height: 600px;
@@ -222,6 +222,9 @@ a:hover {
     width: 120px;
     height: 120px;
     margin-bottom: 20px; }
+  .section-two h4 {
+    font-weight: 400 !important;
+    font-size: 24px; }
   .section-two button {
     background-color: #178B94;
     padding-right: 0; }
@@ -244,14 +247,14 @@ a:hover {
 
 .section-three {
   width: 100% !important;
-  height: 70vh !important;
+  height: 100% !important;
   background-position: center !important;
   background-image: url("../images/desk (2).jpg") !important;
   position: relative !important; }
 
 .section-four {
   width: 100% !important;
-  height: 70vh !important;
+  height: 100% !important;
   background-position: center !important;
   background-image: url("../images/desk.jpg") !important; }
 
@@ -259,7 +262,24 @@ a:hover {
   background-color: #F8F8F9;
   padding: 80px 103px 10px !important; }
   .section-five h2 {
-    padding: 0 !important; }
+    padding: 0 !important;
+    font-size: 36px;
+    font-weight: 600 !important;
+    line-height: 44px; }
+
+div:nth-child(10) h2 {
+  padding: 0 !important;
+  font-size: 36px;
+  font-weight: 500 !important;
+  line-height: 44px; }
+div:nth-child(10) h3 {
+  font-family: "My 2ndCustom Font";
+  padding: 0 !important;
+  font-size: 36px;
+  font-weight: 200 !important;
+  line-height: 44px; }
+div:nth-child(10) p {
+  word-spacing: 0.05em; }
 
 .uk-dotnav a {
   background-color: #fff !important;
@@ -312,14 +332,58 @@ a:hover {
 
 .pricing {
   padding-top: 80px; }
+  .pricing svg {
+    color: gray;
+    margin-right: 8px;
+    float: center; }
+  .pricing span {
+    padding-left: 18px !important;
+    float: center; }
   .pricing h2 {
     margin: 0px;
-    font-size: 40px; }
+    font-size: 40px;
+    margin-bottom: 24px !important; }
   .pricing p {
     margin: 0px;
-    font-size: 30px; }
+    font-size: 23px;
+    color: #494949;
+    font-family: "My 2ndCustom Font";
+    margin-bottom: 12px; }
   .pricing a {
     padding: 0 0 0 40px; }
+  .pricing .uk-input {
+    height: 20px;
+    vertical-align: middle;
+    display: inline-block; }
+  .pricing .try {
+    border: 0.5px solid #e5e5e4;
+    padding: 10px;
+    padding-right: 0px !important;
+    margin-bottom: 15px; }
+  .pricing #first {
+    background-image: url("../images/green-dot.svg");
+    background-repeat: no-repeat;
+    background-position: 15x 15px;
+    border: 0;
+    background-size: 8%;
+    padding-left: 30px;
+    outline: 0;
+    color: black;
+    font-family: "My 2ndCustom Font"; }
+  .pricing .uk-grid {
+    margin: 0px !important; }
+  .pricing line {
+    position: absolute;
+    z-index: 1; }
+  .pricing #second {
+    background-image: url("../images/red-dot.svg");
+    background-repeat: no-repeat;
+    background-position: 10x 10px;
+    border: 0;
+    background-size: 8%;
+    padding-left: 30px;
+    outline: 0;
+    font-family: "My 2ndCustom Font"; }
 
 .location {
   padding-right: 100px; }
