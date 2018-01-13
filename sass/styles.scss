@@ -47,7 +47,7 @@ body {
     font-weight: 100;
     letter-spacing: -0.03em;
     margin: 0px !important;
-    color:#111;
+  
     background-color: #e5e5e4;
    
 } 
@@ -731,10 +731,15 @@ a{
         display: inline-block;
     }
 }
+.uk-button{
+    font-size:14px;
+    font-weight:900 !important;
+}
 .uk-button-secondary {
     background-color: #fff !important ;
     color:black !important ;
     font-style: bold;
+   
 }
 .uk-button-secondary:hover {
   background-color: rgb(221, 217, 217) !important;

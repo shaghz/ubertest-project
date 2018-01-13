@@ -16,7 +16,6 @@ body {
   font-weight: 100;
   letter-spacing: -0.03em;
   margin: 0px !important;
-  color: #111;
   background-color: #e5e5e4; }
 
 .uk-input:focus {
@@ -498,6 +497,10 @@ div:nth-child(10) a {
 .layout .right {
   width: 50%;
   display: inline-block; }
+
+.uk-button {
+  font-size: 14px;
+  font-weight: 900 !important; }
 
 .uk-button-secondary {
   background-color: #fff !important;
