@@ -138,7 +138,7 @@ a:hover {
 .uk-navbar-right ul li:nth-child(-n+2) a {
   padding: 0 6px !important; }
 
-.driver {
+.img1 {
   position: relative;
   padding-top: 20px;
   width: 100%;
@@ -160,8 +160,7 @@ a:hover {
   background-color: #DDDDDD; }
 
 .section-one {
-  padding: 44px 103px  !important;
-  margin: 0 145px 0 145px !important; }
+  margin: 44px 103px  !important; }
   .section-one form {
     margin-left: 65px;
     padding: 32px;

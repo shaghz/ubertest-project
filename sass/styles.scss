@@ -29,7 +29,7 @@ $magic-gray:#F8F8F9;
     }
 
 }
-@mixin imgbk{
+@mixin divbackground{
     width:100% !important;
     height:100% !important;
     background-position: center !important;
@@ -57,9 +57,7 @@ body {
     font-weight: 100;
     letter-spacing: -0.03em;
     margin: 0px !important;
-  
     background-color: #e5e5e4;
-   
 } 
 .uk-input:focus{
     border-color:#e5e5e4 !important;
@@ -200,13 +198,12 @@ a:hover{
    }
 }
 
-.driver{
+.img1{
     position: relative;
     padding-top: 20px;
     width:100%;
     height:100%;
     background-position: center !important;
-
 }
 
 .blank{
@@ -222,23 +219,17 @@ a:hover{
   padding:150px 103px 80px;
 }
 
-
-.part-six{
- 
-    }
-
 .video{
     object{
         min-height:600px;
         background-color: #DDDDDD;
     }
 }
-.button-footer{
 
-}
+
 .section-one{
-    padding:44px 103px  !important;
-    margin:0 145px 0 145px !important;
+
+    margin:44px 103px  !important;
     
         form{
             margin-left:65px;
@@ -379,14 +370,14 @@ a:hover{
 }
 
 .section-three{
-    @include imgbk();
+    @include divbackground();
     background-image: url('../images/desk (2).jpg') !important;
     position: relative !important;
     background-repeat: no-repeat;
 }
 
 .section-four{
-    @include imgbk();
+    @include divbackground();
     background-image: url('../images/desk.jpg') !important;
     background-repeat: no-repeat;
 }
