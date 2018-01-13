@@ -57,10 +57,18 @@ body {
 .uk-input{
     padding:25px 20px !important;
 }
-h1,h2,h3,h4,h5{
-    font-family: "My Custom Font";
+h1{
+    font-family: "My Custom Font" !important;
+    font-weight: 500 ;
+  
+    margin: 0 !important;
+    line-height:32px;
+   color:#111;  
+}
+h2,h3,h4,h5{
+    font-family: "My Custom Font"!important;
     font-weight: 400 ;
-    
+  
     margin: 0 !important;
     line-height:32px;
    color:#111;
@@ -183,8 +191,9 @@ a:hover{
 .driver{
     position: relative;
     padding-top: 20px;
-    width:1600px;
-    height:560px;
+    width:100%;
+    height:100%;
+    background-position: center !important;
 
 }
 
@@ -214,8 +223,8 @@ a:hover{
 }
 
 .section-one{
-    padding:44px 10px  !important;
-    margin:0 220px 0 220px !important;
+    padding:44px 103px  !important;
+    margin:0 145px 0 145px !important;
     
         form{
             margin-left:65px;
@@ -297,11 +306,12 @@ a:hover{
             .rules{
                 font-size:14px;
                 line-height: 28px;
-                margin-top:40px;
+                margin-top:20px;
             }
             p{
                 font-size:10px;
                 line-height: 16px;
+                margin:0px;
                 a{
                     font-size:10px;
                 line-height: 16px;
@@ -310,7 +320,8 @@ a:hover{
             h4{
                 letter-spacing: 0.001em;
                 word-spacing: -0.25em !important;
-                font-size: 1.71429rem;
+                font-family: "My Custom Font";
+                font-size: 24px;
             }
     }
 
@@ -370,6 +381,10 @@ a:hover{
     position: absolute;
     z-index:1;
     }
+
+    h2{
+        margin-bottom: 24px;
+    }
    
 }
 
@@ -390,12 +405,22 @@ a:hover{
     background-color: 	$magic-gray;
 
     padding: 80px 103px 10px!important;
+    .section-two{
+        p{
+            font-family: "My 2ndCustom Font" !important;
+            color:#494949;
+            font-size:23px;
+            font-weight:200;
+        }
+    }
     h2{
         padding:0!important;
         font-size:36px;
-        font-weight:600 !important;
+        font-weight:400 !important;
         line-height:44px;
+        margin-bottom:24px !important;
     }
+   
 }
 div:nth-child(10) {
     h2{
@@ -405,14 +430,21 @@ div:nth-child(10) {
         line-height:44px;
     }
     h3{
-        font-family: "My 2ndCustom Font";
+        font-family: "My 2ndCustom Font" !important;
         padding:0!important;
         font-size:36px;
         font-weight:200 !important;
         line-height:44px;
     }
     p{
-        word-spacing: 0.05em;
+        word-spacing: -0.1em;
+        width:84%;
+    }
+    a{
+        font-family: "My Custom Font";
+        font-size:14px;
+        font-weight:900 !important;
+        line-height:44px;
     }
    }
 .uk-dotnav{
@@ -442,6 +474,33 @@ a{
 .section-six{
     padding: 80px 93px 52px!important;      
     background-color: 	$magic-gray;
+    input[type="text"] {
+        width: 380px;
+        height: 44px;
+        padding-right: 50px;
+        border:0;
+        font-size:14px;
+        font-weight:400;
+        padding:0px 0 0 20px ;
+        font-family:"My Custom Font";
+    }
+    
+    button {
+      
+        height:44px;
+        width:50px;
+        padding:0 0;
+        background: $magic-green;
+        color: white;
+        border: 0;
+        -webkit-appearance: none;
+            span {
+            margin: 0px !important;
+        }
+    }
+    div{
+        font-family: "My 2ndCustom Font";
+    }
     .arrow{
         padding-right:30px;
     }
@@ -621,6 +680,9 @@ a{
         span{
             padding-right:10px;
     
+        }
+        p{
+            color:$magic-white;
         }
     }
     .main.uk-card.uk-card-body{
