@@ -38,6 +38,9 @@ h2, h3, h4, h5 {
   line-height: 32px;
   color: #111; }
 
+em {
+  color: black !important; }
+
 p {
   font-weight: 400;
   font-size: 14px;
@@ -70,12 +73,13 @@ a:hover {
   .uk-navbar .uk-navbar-left a {
     font-family: "My Custom Font" !important;
     padding-left: 0 20px;
+    padding-top: 4px;
     color: #000000 !important;
     height: 60px !important;
     line-height: 60px !important;
     margin-top: -4px !important;
     display: block !important;
-    font-size: 17px !important;
+    font-size: 16px !important;
     font-weight: 300 !important;
     text-transform: none !important;
     letter-spacing: 0.03em; }
@@ -85,7 +89,8 @@ a:hover {
     border-top: 4px solid #fff; }
 
 .logo {
-  padding-left: 0px !important; }
+  padding-left: 0px !important;
+  padding-right: 21px !important; }
 
 .nav-item:hover {
   border-top: 4px solid #377037; }
@@ -117,6 +122,8 @@ a:hover {
   padding-right: 10px; }
 .uk-navbar-right a {
   padding: 0 6px; }
+.uk-navbar-right svg:hover {
+  fill: #377037 !important; }
 .uk-navbar-right ul li:nth-child(5) a {
   padding-right: 0px !important;
   padding-left: 24px !important; }
@@ -214,7 +221,8 @@ a:hover {
   .section-one button {
     background-color: #178B94;
     font-weight: 700;
-    padding: 3px 20px !important; }
+    padding: 1px 20px !important;
+    padding-top: 4px !important; }
     .section-one button span {
       float: right;
       margin-top: 8px; }
@@ -261,13 +269,15 @@ a:hover {
   height: 100% !important;
   background-position: center !important;
   background-image: url("../images/desk (2).jpg") !important;
-  position: relative !important; }
+  position: relative !important;
+  background-repeat: no-repeat; }
 
 .section-four {
   width: 100% !important;
   height: 100% !important;
   background-position: center !important;
-  background-image: url("../images/desk.jpg") !important; }
+  background-image: url("../images/desk.jpg") !important;
+  background-repeat: no-repeat; }
 
 .section-five {
   background-color: #F8F8F9;
@@ -349,7 +359,7 @@ div:nth-child(10) a {
     fill: #0b5a5f; }
 
 .picturetext {
-  padding: 80px 103px !important;
+  padding: 60px 103px !important;
   position: relative !important;
   width: 100% !important;
   z-index: 2 !important; }
@@ -376,17 +386,63 @@ div:nth-child(10) a {
 
 .pricing {
   padding-top: 80px; }
-  .pricing svg {
+  .pricing i {
     color: gray;
     margin-right: 8px;
     float: center; }
   .pricing span {
-    padding-left: 18px !important;
-    float: center; }
+    padding-left: 18px !important; }
+  .pricing i {
+    margin-left: 16px; }
+  .pricing button {
+    text-align: center;
+    border: 0;
+    background-color: #C6C6C6; }
+  .pricing button:hover {
+    background-color: #C6C6C6; }
+  .pricing .spaan {
+    padding-left: 14px !important;
+    margin-left: 22px !important; }
+    .pricing .spaan i {
+      color: white;
+      margin-left: 2px;
+      font-size: 19px; }
+  .pricing svg {
+    display: flex;
+    text-align: center; }
+  .pricing .connect-line {
+    position: absolute;
+    height: 60px;
+    width: 1px;
+    margin-left: 20px;
+    margin-top: 22px;
+    background-color: #C6C6C6;
+    z-index: 10; }
+  .pricing .connect-line:before {
+    bottom: -1.5px;
+    background-color: #F32F00;
+    border: 0.25px solid #F32F00;
+    content: '';
+    position: absolute;
+    left: -2px;
+    width: 4.5px;
+    height: 4.5px;
+    border-radius: 50%; }
+  .pricing .connect-line:after {
+    top: -3.5px;
+    background-color: #27AA0B;
+    border: 0.25px solid #27AA0B;
+    content: '';
+    position: absolute;
+    left: -2px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%; }
   .pricing h2 {
     margin: 0px;
     font-size: 40px;
-    margin-bottom: 24px !important; }
+    margin-bottom: 24px !important;
+    word-spacing: -10px; }
   .pricing p {
     margin: 0px;
     font-size: 23px;
@@ -404,8 +460,36 @@ div:nth-child(10) a {
     padding: 10px;
     padding-right: 0px !important;
     margin-bottom: 15px; }
+    .pricing .try span {
+      fill: gray !important; }
+      .pricing .try span svg {
+        fill: gray !important; }
+      .pricing .try span i {
+        color: #C6C6C6;
+        font-size: 18px; }
+  .pricing .second span {
+    border-top: 20px; }
+  .pricing .try2 {
+    border: 0.5px solid #e5e5e4;
+    border-right: 400px;
+    height: 45px;
+    padding-right: 0px !important;
+    margin-bottom: 15px; }
+    .pricing .try2 span {
+      background-color: #C6C6C6;
+      color: white;
+      padding-top: 12px; }
+  .pricing .try3 {
+    padding: 10px;
+    padding-right: 0px !important;
+    margin-bottom: 15px; }
+  .pricing #second {
+    border: 0;
+    background-size: 10%;
+    padding-left: 30px;
+    outline: 0;
+    font-family: "My 2ndCustom Font"; }
   .pricing #first {
-    background-image: url("../images/green-dot.svg");
     background-repeat: no-repeat;
     background-position: 15x 15px;
     border: 0;
@@ -419,15 +503,6 @@ div:nth-child(10) a {
   .pricing line {
     position: absolute;
     z-index: 1; }
-  .pricing #second {
-    background-image: url("../images/red-dot.svg");
-    background-repeat: no-repeat;
-    background-position: 10x 10px;
-    border: 0;
-    background-size: 8%;
-    padding-left: 30px;
-    outline: 0;
-    font-family: "My 2ndCustom Font"; }
 
 .location {
   padding-right: 100px; }
@@ -501,6 +576,14 @@ div:nth-child(10) a {
 .uk-button {
   font-size: 14px;
   font-weight: 900 !important; }
+
+.button-top {
+  padding-top: 5px !important;
+  padding-left: 20px !important; }
+
+.button-top-navbar {
+  padding: 2.5px 12px 1.5px !important;
+  word-spacing: -2px; }
 
 .uk-button-secondary {
   background-color: #fff !important;

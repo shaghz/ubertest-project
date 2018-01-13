@@ -12,11 +12,12 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
   <!-- UIkit CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/css/uikit.min.css" />
-
+<link rel="stylesheet" href="./images/font-awesome-4.7.0/css/font-awesome.min.css">
 <!-- UIkit JS -->
 <script rc="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/js/uikit.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/js/uikit-icons.min.js"></script>
+
 </head>
 
 <body>
@@ -63,10 +64,13 @@
                                 <a href="#">SIGN IN</a>
                             </li>
                             <li>
-                                <a class="uk-navbar-toggle" uk-icon="icon: location" style="fill:black"></a>
+                               <a>
+                                    <svg viewBox="0 0 64 64" width="20px" height="20px" class=" _style_4wJp4e" data-reactid="78"><path d="M32.0000114,4c-11.0449219,0-20,8.8027344-20,20c0,6.0996094,2,11.03125,6,16.9375l13.1807709,18.6359062 C31.3796368,59.8575249,31.6893368,59.9997215,31.9991455,60c0.3104134,0.0002785,0.6209373-0.141922,0.820179-0.4265938 L46.0000114,40.9375c4-5.90625,6-10.8378906,6-16.9375C52.0000114,12.8027344,43.0449333,4,32.0000114,4z M32.0000114,36.25 c-6.7655029,0-12.25-5.484375-12.25-12.25s5.4844971-12.25,12.25-12.25s12.25,5.484375,12.25,12.25 S38.7655144,36.25,32.0000114,36.25z" data-reactid="79"></path></svg>
+                            </a>
+                                
                             </li>
                             <li>
-                                <button class="uk-button uk-button-primary uk-button-small">BECOME A DRIVER</button>
+                                <button class="uk-button uk-button-primary uk-button-small button-top-navbar  ">BECOME A DRIVER</button>
                             </li>
                             <li>
                                     <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
@@ -115,7 +119,7 @@
                      </div>
                         <input class="uk-input  uk-padding-small indivual"  type="text" placeholder="City">
                         <input class="uk-input  uk-padding-small indivual"  type="text" placeholder="Invite Code(optional)">
-                        <button CLASS="uk-button uk-button-primary uk-width-1-1 indivual uk-text-left uk-animation-toggle ">SIGN UP TO DRIVE <span class=" uk-animation-slide-left-small" uk-icon="icon: arrow-right"></span></button>
+                        <button CLASS="uk-button uk-button-primary uk-width-1-1 indivual uk-text-left uk-animation-toggle button-top">SIGN UP TO DRIVE <span class=" uk-animation-slide-left-small" uk-icon="icon: arrow-right"></span></button>
                         <div  class="rules" >Or <a href="https://partners.uber.com/login/upgrade?lite=1">sign up</a> with your rider account.</div>
                      <p>
                          By proceeding, I agree that Uber or its representatives may contact me by email, phone, or SMS (including by automatic telephone dialing system) at the email address or number I provide, including for marketing purposes. I have read and understand the relevant
@@ -246,7 +250,7 @@
                     </div>
                 </div>
           
-                <button class="uk-button uk-button-primary uk-margin-large-top  uk-animation-toggle">Reasons to ride <span class="uk-animation-slide-left-small" uk-icon="icon: arrow-right"></span></button>
+                <button class="uk-button uk-button-primary uk-margin-large-top  uk-animation-toggle button-top">Reasons to ride <span class="uk-animation-slide-left-small" uk-icon="icon: arrow-right"></span></button>
                 </div>
             </div>  
     <div class="section-three">
@@ -255,7 +259,7 @@
                 <div class="written">
                 <h2 style="color:white">Our community</h2>
                 <p  style="color:white"> Our driver community comprises people of different backgrounds, experiences, and interests. But it’s their passions that tell the story of who they are.</p>
-                <button class="uk-button uk-button-primary uk-margin-large-top  uk-animation-toggle">Read stories<span class="uk-animation-slide-left-small" uk-icon="icon: arrow-right"></span></button>
+                <button class="uk-button uk-button-primary uk-margin-large-top  uk-animation-toggle button-top">Read stories<span class="uk-animation-slide-left-small" uk-icon="icon: arrow-right"></span></button>
               </div>
             </div>
         </div>
@@ -267,24 +271,28 @@
             <div class="uk-width-1-3 ">
                 <div class="pricing">
                     <p>Pricing</p>
-                    <h2 >Get a fare estimate</h2>
+                    <h2 >Get a fare estimate </h2>
                     <div class="connector">
                             <form>
+                                    <div class="connect-line"></div>
                                     <div class="try uk-width-1-1">
 
                                         <div class=" uk-grid">
                                         <input id="first"class="uk-width-5-6" type="text" placeholder="Enter pickup location">
-                                        <span class="uk-width-1-6 uk-margin-remove " uk-icon="icon: location"></span>
+                                        <span class="uk-width-1-6 uk-margin-remove "><i class="fa fa-location-arrow" aria-hidden="true"></i></span>
                                         </div>
                                     </div>  
                                     
 
-                                    <div class="try uk-width-1-1">
-                                         
-                                            <div class=" uk-grid">
-                                                <input class="uk-width-5-6" id="second"  type="text" placeholder="Enter destination">
-                                                <span class="uk-width-1-6 uk-margin-remove" uk-icon="icon: arrow-right"></span>
-                                            </div>
+                                    <div class=" uk-width-1-1" >
+                                        <div class="try2 uk-grid">
+                                            <div class="try3 uk-width-5-6">
+                                            <input type="text" id="second" placeholder="Enter destination" class=" uk-width-5-6">
+                                        </div>
+                                           <button class="spaan uk-margin-remove"> <i class="fa fa-long-arrow-right"></i></button>
+                                        </div>
+                                            
+                                     
                                     </div>    
                             </form>
 
@@ -314,7 +322,7 @@
                     <h3  class="uk-margin-remove"  style="color:white">Make what you need</h3>
 
                     <p  style="color:white"> Driving with Uber is flexible and rewarding, helping drivers meet their career and financial goals.</p>
-                    <button class="uk-button uk-button-primary uk-margin-large-top  uk-animation-toggle">REASONS TO DRIVE <span class=" uk-animation-slide-left-small" uk-icon="icon: arrow-right"></span></button>
+                    <button class="uk-button uk-button-primary uk-margin-large-top  uk-animation-toggle button-top">REASONS TO DRIVE <span class=" uk-animation-slide-left-small" uk-icon="icon: arrow-right"></span></button>
                 </div>
                 </div>
             </div>
@@ -351,8 +359,9 @@
                                                 <div class="s-card uk-card uk-card-default uk-card-body uk-margin-left">
                                                         <img src="./images/5.jpg" alt="">
                                                         <div class="caption">
-                                                          <p>"I wanted something where I could meet new people and get out of the house. Uber has helped with both of those things, plus I’m seeing new parts of the city I’ve never seen before!"  </p>
-                                                           <em><strong >Katrina</strong>, Mother and Seattle partner</em>
+                                                                <p>"Uber enables me to have the creative freedom for baking my cakes and also driving on the side so I can make more money and also have my dream job."  "  </p>
+                                                                <em><strong >Jenny,</strong> Business owner and Los Angeles partner</em>
+                                                            </div>  
                                                
                                                         </div>
                                             </div>
@@ -362,22 +371,22 @@
                                                 <div class="s-card uk-card uk-card-default uk-card-body">
                                                     <img src="./images/5.jpg" alt="">
                                                     <div class="caption">
-                                                      <p>"I started driving with Uber because I liked the idea that my own car could make me money. After just about a couple weeks, I saw that this was something I wanted to do permanently."  </p>
-                                                      <p><em ><strong>Brandon</strong>, Coach and Chicago partner</em></p>
-                                                    </div> 
+                                                            <p>"Uber enables me to have the creative freedom for baking my cakes and also driving on the side so I can make more money and also have my dream job."  "  </p>
+                                                            <em><strong >Jenny,</strong> Business owner and Los Angeles partner</em>
+                                                        </div>  
                                                 </div>
                                                 <div class="s-card uk-card uk-card-default uk-card-body uk-margin-left">
                                                         <img src="./images/6.jpg" alt="">
                                                         <div class="caption">
-                                                       <p>"I wanted something where I could meet new people and get out of the house. Uber has helped with both of those things, plus I’m seeing new parts of the city I’ve never seen before!"  </p>
-                                                          <em><strong >Katrina</strong>, Mother and Seattle partner</em>
+                                                       <p>"Uber enables me to have the creative freedom for baking my cakes and also driving on the side so I can make more money and also have my dream job."  "  </p>
+                                                          <em><strong >Jenny,</strong> Business owner and Los Angeles partner</em>
                                                       </div>     
                                                 </div>
                                                 <div class="s-card uk-card uk-card-default uk-card-body uk-margin-left">
                                                         <img src="./images/7.jpg" alt="">
                                                         <div class="caption">
-                                                          <p>"I wanted something where I could meet new people and get out of the house. Uber has helped with both of those things, plus I’m seeing new parts of the city I’ve never seen before!"  </p>
-                                                           <em><strong >Katrina</strong>, Mother and Seattle partner</em>
+                                                          <p>""With Uber, I’m able to realize my goals. I’m able to pursue my dreams. I’m able to stay focused on sharing amazing musical experiences with the world.""  </p>
+                                                           <em><strong >Sean</strong>Sean, Musician and LA partner</em>
                                                </div>
                                                         </div>
                                             </div>
@@ -556,7 +565,7 @@
                             <div class="uk-card uk-card-body  uk-padding-remove"><a href="https://get.uber.com" class="uk-button uk-button-secondary " >SIGN UP TO RIDE</a></div>
                         </div>
                         <div>
-                            <div class="uk-card  uk-card-body uk-padding-remove"><a href="https://get.uber.com" class="uk-button uk-button-default" >BECOME A DRIVER</a></div>
+                            <div class="uk-card  uk-card-body uk-padding-remove"><a href="https://get.uber.com" class="uk-button uk-button-default button-top" >BECOME A DRIVER</a></div>
                         </div>
                 </div>
             </div>
