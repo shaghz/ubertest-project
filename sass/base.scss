@@ -1,0 +1,65 @@
+@import 'colors';
+@font-face {
+  font-family: "clanpro-book";
+  src: url("../images/fonts/clanpro-book.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "clanpro-thin";
+  src: url("../images/fonts/clanpro-thin.ttf") format("truetype");
+
+}
+@mixin magic-button {
+  button {
+    background-color: $magic-green;
+    padding-right: 0;
+  }
+  button:hover {
+    background-color: $hover-green;
+    color: white !important;
+  }
+  span {
+    margin-right: 30px;
+    margin-left: 25px;
+  }
+}
+
+@mixin magic-section {
+  padding: 0 145px 0 145px;
+  @include magic-button();
+}
+
+
+@mixin magic-background {
+  background-position: center !important;
+  background-repeat: no-repeat;
+  height: 100% !important;
+  position: relative !important;
+  width: 100% !important;
+}
+
+@mixin magic-header {
+  font-family: 'clanpro-thin', serif;
+  font-weight: 200 !important;
+  color: #494949 !important;
+  font-size: 23px !important;
+  letter-spacing: -.02em !important;
+  line-height: 1 !important;
+  margin-bottom: 12px !important;
+}
+
+@mixin magic-inputbox {
+  border: 0.5px solid $magic-gray;
+  height: 45px;
+  margin-bottom: 15px;
+  padding-right: 0 !important;
+}
+
+@mixin magic-input {
+  input {
+    border: 0;
+    font-family: "clanpro-thin", sans-serif;
+    outline: 0;
+    padding-left: 30px;
+  }
+}

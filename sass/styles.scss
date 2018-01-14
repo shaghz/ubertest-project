@@ -1,883 +1,595 @@
-$primary-color: #111;
-$magic-green: #178B94;
-$hover-green: #0b5a5f;
-$margin: 16px;
-$image-size: 120px;
-$magic-white:#fff;
-$magic-gray:#F8F8F9;
 
-@mixin arrow($color){
-    display:flex;
-    background-color: $color;
-    padding-right: 8px;
-    color:$magic-white;
-    align-items: center;
-}
-@mixin magic-section{
-    padding:0 145px 0 145px;
-    button{
-        background-color: $magic-green;
-        padding-right:0;
-    }
-    button:hover{
-        background-color: $hover-green;
-        color:white !important;
-    }
-    span{
-        margin-right:30px;
-        margin-left:25px;
-    }
+@import 'reset';
+@import 'base';
+@import 'reset';
+@import 'colors';
 
-}
-@mixin divbackground{
-    width:100% !important;
-    height:100% !important;
-    background-position: center !important;
-
-}
-@font-face {
-    font-family: "clanpro-book";
-    src: url('../images/fonts/clanpro-book.ttf') format("truetype");
-}
-@font-face {
-    font-family: "clanpro-thin";
-    src: url('../images/fonts/clanpro-thin.ttf') format("truetype");
-}
-
-html,
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden; 
-}
 
 body {
-    font-family:  "clanpro-book"!important;
-    font-weight: 100;
-    letter-spacing: -0.03em;
-    margin: 0px !important;
-    background-color: #e5e5e4;
-} 
-.uk-input:focus{
-    border-color:#e5e5e4 !important;
+
+  overflow-x: hidden;
+  padding: 0;
+  width: 100%;
+  font-family: "clanpro-book", sans-serif !important;
+  font-weight: 100;
+  letter-spacing: -0.03em;
+  margin: 0 !important;
 }
-.uk-input{
-    padding:25px 20px !important;
+
+.sub-wrapper {
+  background: $magic-gray;
 }
-h1{
-    font-family: "clanpro-book" !important;
-    font-weight: 500 ;
-    margin: 0 !important;
-    line-height:32px;
-    color:#111;  
+
+.wrapper {
+  background-color: $magic-white !important;
+  margin: 0 auto;
+  max-width: 1560px;
 }
-h2,h3,h4,h5{
-    font-family: "clanpro-book"!important;
-    margin: 0 !important;
-    color:#111;
+
+
+#first-p {
+  color: #111;
+  font-family: "clanpro-thin", sans-serif !important;
+  font-size: 44px;
+  font-weight: 100;
+  letter-spacing: -0.03em;
+  line-height: 60px;
+  margin: 0 !important;
 }
-h4{font-size:24px !important;}
-h3{
-    font-family: "clanpro-thin" !important;
-    padding:0!important;
-    font-size:36px;
-    font-weight:200 !important;
-    line-height:44px;
+
+
+.magic-section {
+  @include magic-section();
 }
-em{
-    color:black !important;
+
+//navbar
+.logo {
+  padding-left: 0 !important;
+  padding-right: 21px !important;
 }
-p{
-    font-weight: 400;
-    font-size:14px;
-    line-height:24px;
-     color:#111;
+
+.nav-item:hover {
+  border-top: 4px solid #377037;
 }
-#first-p{
-    font-size:36px;
-    font-family:  "clanpro-thin"!important;
-    font-weight: 100;
-    font-size: 44px;
+
+.uk-navbar {
+  background-color: $magic-white;
+  .uk-navbar-left a {
+    color: #000000;
+    display: block;
+    font-size: 16px;
+    height: 60px;
+    letter-spacing: 0.03em;
     line-height: 60px;
-    letter-spacing: -0.03em;
-    margin: 0px !important;
-    color:#111;
+    margin-top: -4px;
+    text-transform: none !important;
+  }
+  a:hover {
+    color: #377037 !important;
+  }
+  li {
+    border-top: 4px solid $magic-white;
+  }
 }
-a:hover{
-    text-decoration: none !important;
-}
 
-
-.magic-section{@include magic-section()}
-
-.uk-navbar{
-    background-color: $magic-white;
-   
-
-  .uk-navbar-left{
-    a{
-        color: #000000 ;
-        height: 60px ;
-        line-height: 60px ;
-        margin-top: -4px ;
-        display: block ;
-        font-size: 16px;
-        text-transform: none !important;
-       letter-spacing: 0.03em;
+// navbar-right
+.uk-navbar-right {
+  a {
+    color: #000000 !important;
+    display: block !important;
+    font-family: "clanpro-book", sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    height: 60px !important;
+    line-height: 60px !important;
+    margin-top: -4px !important;
+    text-transform: uppercase !important;
+  }
+  button {
+    background-color: $magic-green;
+    font-size: .75714rem;
+    font-weight: 900;
+    line-height: 2.575;
+    margin-top: 8px;
+    outline: 0;
+    padding: 0 12px;
+    position: relative;
+    &:hover {
+      background-color: $hover-green;
     }
   }
-    a:hover{
-        color:#377037 !important;
+  a {
+    padding: 0 6px;
+  }
+  svg:hover {
+    fill: #377037 !important;
+  }
+  ul li {
+    &:nth-child(5) a {
+      padding-left: 24px !important;
+      padding-right: 0 !important;
     }
-   
-    li{
-        border-top :4px solid #fff ;
+    &:nth-child(-n+2) a {
+      padding: 0 6px !important;
     }
-  
-}
-.logo{
-    padding-left:0px!important;
-    padding-right:21px!important;
-}
-.nav-item:hover{
-    border-top :4px solid #377037 ;
-}
-
-.uk-navbar-right{
-    a{
-        font-family: "clanpro-book"!important;
-        color: #000000 !important;
-        height: 60px !important;
-        line-height: 60px !important;
-        margin-top: -4px !important;
-        display: block !important;
-        font-size: 15px !important;
-        text-transform: uppercase !important;
-        font-family: ff-clan-web-pro, "Helvetica Neue", Helvetica, sans-serif !important;
-        font-weight: 500 !important;
-
-    }
-    button{
-        margin-top:8px;
-        background-color: $magic-green;
-        padding:3.5px 12px;
-        font-size: .75714rem;
-        line-height: 2.575;
-        font-weight: 1000;
-        outline: 0;
-        position: relative; 
-        
-    }
-    button:hover{
-        background-color: $hover-green;
-    }
-    img{
-        padding-top:18px;
-        padding-right:10px;
-    }
-    a{
-        padding:0 6px;
-    }
-    svg:hover{
-        fill:#377037 !important;
-    }
-    ul{
-        li:nth-child(5){
-            a{
-               padding-right:0px !important;
-               padding-left:24px !important;
-            }
-            
-        }
-        li:nth-child(-n+2){
-           a{
-               padding:0 6px !important;
-           }
-        }
-   }
+  }
 }
 
-.img1{
-    position: relative;
-    padding-top: 20px;
-    width:100%;
-    height:100%;
-    background-position: center !important;
+//section one
+.first-img {
+  background-position: center !important;
+  height: 100%;
+  padding-top: 20px;
+  position: relative;
 }
 
-.blank{
-    height:200px;
+.triple-card {
+  padding: 150px 103px 80px;
 }
 
-.header2{
-    width:800px !important;
-    margin-top:0 !important;
-}
-
-.part-two{
-  padding:150px 103px 80px;
-}
-
-.video{
-    object{
-        min-height:600px;
-        background-color: #DDDDDD;
-    }
-}
-
-
-.section-one{
-
-    margin:44px 103px  !important;
-    
-        form{
-            margin-left:65px;
-            padding:32px;
-            background-color: #F8F8FA;
-            display:inline-block;
-            z-index:1;
-            position: absolute;
-            min-width:400px;
-            border-top: 8px solid #f1f1f1 !important;
-           
-           
-            .couple{
-                input:nth-child(2){
-                    border-left:0;
-                }
-            }
-           .triple{
-           
-            input:nth-child(-n+2){
-                    border-bottom:0 !important;
-                }
-           }
-            div:nth-child(3){
-                padding-top:20px !important;
-            }
-            .item-one{
-                padding-bottom:20px;
-                .uk-width-3-4{
-                    padding-left:20px !important;
-                }
-                .uk-grid{
-                    padding: 0 !important;
-                }
-                a{
-                padding-right:20px;                    
-                }
-            }
-           
-            input{
-                padding:25px;
-                font-size:14px;
-
-            }
-            img{
-            width:80px !important;
-            margin-right:60px;
-            
-            }
-            a{
-                font-weight: bold;
-                color:$magic-green;
-                font-size:14px;
-                line-height: 25px;
-                
-            }
-            i{
-                color: $magic-green;
-            }
-            .or-line{
-                h2 {
-                    width:100%;
-                    text-align:center; 
-                    border-bottom: 1px solid rgba(187, 187, 187, 0.651); 
-                    line-height:0.1em; 
-                    margin:15px 0 40px;
-                    span {
-                            background-color: #F8F8FA;
-                            padding:10px 8px 32px 8px ;
-                            font-size: 10px;
-                        }
-                } 
-                
-            }
-        
-            .main{
-                margin-left:32px;
-                    
-            }
-            .rules{
-                font-size:14px;
-                line-height: 28px;
-                margin-top:20px;
-            }
-            p{
-                font-size:10px;
-                line-height: 16px;
-                margin:0px;
-                a{
-                    font-size:10px;
-                line-height: 16px;
-                }
-            }
-            h4{
-                letter-spacing: 0.001em;
-                word-spacing: -0.25em !important;
-            }
-    }
-
-    button{
-        background-color: $magic-green;
-        font-weight:700;
-        padding:1px 20px !important;
-        padding-top:4px !important;
-       
-       span{
-        float:right;
-        margin-top:8px;
-       }
-    }
-    button:hover{
-        background-color: $hover-green !important;
-    }
-   
-      .indivual{
-        margin-top:$margin;
-      }
-      a:hover{
-        color: $hover-green;
-    }
-}
-
-.section-two{
-    
-    .image{
-        width:120px;
-        height:120px;
-        margin-bottom:20px;
-    }
-    
-    .text{
+.section-one {
+  margin: 44px 103px !important;
+  form {
+    background-color: #F8F8FA;
+    border-top: 8px solid #f1f1f1 !important;
+    display: inline-block;
+    min-width: 400px;
+    padding: 32px;
     position: absolute;
-    z-index:1;
-    }
+    z-index: 1;
 
-   
-   
-}
-
-.section-three{
-    @include divbackground();
-    background-image: url('../images/desk (2).jpg') !important;
-    position: relative !important;
-    background-repeat: no-repeat;
-}
-
-.section-four{
-    @include divbackground();
-    background-image: url('../images/desk.jpg') !important;
-    background-repeat: no-repeat;
-}
-
-.section-five{
-
-    background-color: 	$magic-gray;
-
-    padding: 80px 103px 10px!important;
-    .section-two{
-        p{
-            font-family: "clanpro-thin" !important;
-            color:#494949;
-            font-size:23px;
-            font-weight:200;
-        }
+    .couple input:nth-child(2) {
+      border-left: 0;
     }
-    h2{
-        padding:0!important;
-       
-
-        font-weight:400 !important;
-        line-height:44px;
-        margin-bottom:24px !important;
+    .triple input:nth-child(-n+2) {
+      border-bottom: 0 !important;
     }
-   
-}
-div:nth-child(10) {
-    h2{
-        padding:0!important;
-       
-        font-weight:500 !important;
-        line-height:44px;
+    div:nth-child(3) {
+      padding-top: 20px !important;
     }
-    h3{
-       
+    .item-one {
+      padding-bottom: 20px;
+      .uk-width-3-4 {
+        padding-left: 20px !important;
+      }
+      a {
+        padding-right: 20px;
+      }
     }
-    p{
-        word-spacing: -0.1em;
-        width:84%;
+    input {
+      font-size: 14px;
+      padding: 25px;
     }
-    a{
-        font-family: "clanpro-book";
-        font-size:14px;
-        font-weight:900 !important;
-        line-height:44px;
+    img {
+      margin-right: 60px;
+      width: 80px !important;
     }
-   }
-.uk-dotnav{
-a{
-    background-color:  #fff !important;
-    color: #e5e5e4;
-    width:13px;
-    height:13px;
-
-    
-}
-.uk-active{
-    a{
-    margin-top:3px;
-    background-color:  $magic-green !important;
-    width:5px;
-    height:5px;
+    a {
+      color: $magic-green;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 25px;
     }
-}
-}
-.dots{
-    a{
-        background-color: $magic-green;
-        color:white;
+    i {
+      color: $magic-green;
     }
-}
-.section-six{
-    padding: 80px 93px 52px!important;      
-    background-color: 	$magic-gray;
-    input[type="text"] {
-        width: 380px;
-        height: 44px;
-        padding-right: 50px;
-        border:0;
-        font-size:14px;
-        font-weight:400;
-        padding:0px 0 0 20px ;
-        font-family:"clanpro-book";
+    .or-line h2 {
+      border-bottom: 1px solid rgba(187, 187, 187, 0.651);
+      line-height: 0.1em;
+      margin: 15px 0 40px;
+      text-align: center;
+      width: 100%;
+      span {
+        background-color: #F8F8FA;
+        font-size: 10px;
+        padding: 10px 8px 32px 8px;
+      }
     }
-    
-    button {
-      
-        height:44px;
-        width:50px;
-        padding:0 0;
-        background: $magic-green;
-        color: white;
-        border: 0;
-        -webkit-appearance: none;
-            span {
-            margin: 0px !important;
-        }
+    .rules {
+      font-size: 14px;
+      line-height: 28px;
+      margin: 16px 0;
     }
-    div{
-        font-family: "clanpro-thin";
+    p {
+      font-size: 10px;
+      line-height: 16px;
+      margin: 0;
+      a {
+        font-size: 10px;
+        line-height: 16px;
+      }
     }
-    .arrow{
-        padding-right:30px;
+    h4 {
+      letter-spacing: 0.001em;
+      word-spacing: -0.25em !important;
     }
-    .arrow:hover{
-        fill:$hover-green;
+  }
+  button {
+    background-color: $magic-green;
+    padding-right: 0;
+    &:hover {
+      background-color: $hover-green;
+      color: white !important;
     }
-}
-
-.picturetext{
-    padding: 60px 103px!important;
-    position: relative !important;
-    width: 100% !important;
-    z-index: 2 !important;
-  
-
-        a{
-            color:$magic-green;
-        }
-        a:hover{
-            color:$hover-green;
-        }
-        h3{
-            margin:0px !important;
-        }
-        p{
-            font-size:14px;
-        }
-}
-
-.written{
-    padding:50px 0 !important;
-    width: 50% !important;
-    
-    p{
-        padding-right:150px;
-    }
-}
-
-.connector{
-  .arrow{
-        background-color:  #e5e5e4;
-        padding-left:8px !important;
-        svg{
-         width:30px;
-        }
-    }
-}
-
-.pricing{
-    padding-top:80px;
-    i{
-        color:gray;
-        margin-right:8px;
-        float: center;
-        
-    }
-    span{
-        padding-left:18px !important;
-       
-
-    }
-    i{
-        margin-left:16px;
-    }
-    button{
-        text-align: center;
-        
-        border:0;
-        background-color: #C6C6C6;
-    }
-    button:hover{
-        background-color: #C6C6C6;
-    }
-    .spaan{
-        padding-left:14px !important;
-        margin-left:22px!important;
-        
-        i{
-            color:white;
-            margin-left:2px;
-            font-size:19px;
-        }
-    }
-    svg{
-        display:flex;
-        text-align:center;
-    }
-
-    .connect-line{
-        position: absolute;
-        height:60px;
-        width: 1px;
-        margin-left:20px;
-        margin-top:22px;
-        background-color: #C6C6C6;
-        z-index:10;
-    }
-    .connect-line:before{
-        
-        bottom: -1.5px;
-        background-color: #F32F00;
-        border: 0.25px solid #F32F00;
-        content: '';
-        position: absolute;
-        left: -2px; 
-        width: 4.5px;
-        height: 4.5px;
-        border-radius: 50%;
-        
-    }
-    
-    .connect-line:after{
-        
-        top: -3.5px;
-        background-color: #27AA0B;
-        border: 0.25px solid #27AA0B;
-        content: '';
-        position: absolute;
-        left: -2px;
-        width: 5px;
-        height: 5px;
-        border-radius: 50%;
-        
-    }
-    h2{
-        margin:0px;
-       
-        margin-bottom:24px !important;
-        word-spacing: -10px;
-    }
-    p{
-        margin:0px;
-        font-size: 23px;
-        color:#494949;
-        font-family: "clanpro-thin";
-        margin-bottom:12px;
-    }
-    a{
-        padding:0 0 0 40px;
-    }
-        .uk-input {
-        height: 20px;
-        vertical-align: middle;
-        display: inline-block;
-    }
-   .try{
-       border:0.5px solid #e5e5e4;
-       padding:10px;
-       padding-right:0px !important;
-       margin-bottom:15px;
-     span {
-        fill:gray !important; 
-        svg{
-         fill:gray !important;
-     }
-     i{
-         color:#C6C6C6;
-         font-size:18px;
-     }
-     }
-    
-   }
- 
-   .second{
-    span{
-       border-top:20px;
-   }  
-}  
-.try2{
-    border:0.5px solid #e5e5e4;
-    border-right:400px;
-    height:45px;
-    padding-right:0px !important;
-    margin-bottom:15px;
-
-  span{
-      background-color: #C6C6C6;
-      color:white;
-      padding-top:12px;
-      
+  }
+  span {
+    margin-right: 30px;
+  }
+  .indivual {
+    margin-top: 12px;
+  }
+  a:hover {
+    color: $hover-green;
   }
 }
-.try3{
-    
-    padding:10px;
-    padding-right:0px !important;
-    margin-bottom:15px;
-}
-#second{
-   
-    border:0;
-    background-size: 10%;
-    padding-left:30px;
-    outline:0;
-    font-family:"clanpro-thin";
- 
-} 
 
-     #first{
-                   
-                    background-repeat: no-repeat;
-                    background-position: 15x 15px;
-                    border:0;
-                    background-size: 8%;
-                    padding-left:30px;
-                    outline:0;
-                    color:black;
-                    font-family:"clanpro-thin"
-              }
-              .uk-grid{
-                  margin:0px !important;
-              }
-              line{
-                  position: absolute;
-                  z-index:1;
+.section-two .image {
+  height: 120px;
+  margin-bottom: 20px;
+  width: 120px;
+}
 
-              }
-              
-        
-          
-        
-    
+.section-three {
+  background-image: url("../images/desk (2).jpg") !important;
+  @include magic-background();
 }
-.location{
-    padding-right:100px;
+
+.section-four {
+  background-image: url("../images/desk.jpg") !important;
+  @include magic-background();
 }
-.map{
-    padding:80px 0 ;
-    h2{
-        margin-bottom:24px;
+
+.section-five {
+  background-color: $magic-white;
+  padding: 80px 103px 10px !important;
+  h2 {
+    margin-bottom: 24px !important;
+  }
+  .header {
+    @include magic-header()
+  }
+}
+
+//unlocking cities
+.unlock-cities {
+  padding: 130px 103px !important;
+  position: relative !important;
+  width: 95% !important;
+  z-index: 2 !important;
+  margin-right: 0 !important;
+  h2 {
+    font-weight: 500 !important;
+    line-height: 44px;
+    padding: 0 !important;
+  }
+  p {
+    width: 84%;
+    word-spacing: -0.1em;
+  }
+  a {
+    font-family: "clanpro-book", sans-serif;
+    font-size: 14px;
+    font-weight: 900 !important;
+    line-height: 44px;
+    color: $magic-green;
+    &:hover {
+      color: $hover-green;
     }
+  }
+
 }
 
 
-
-
-.caption{
-    padding:40px;
-}
-.s-card{
-    p{
-        margin: $margin;
+//slides part
+.section-six {
+  background-color: #f8f8f8;
+  padding: 80px 93px 52px !important;
+  input[type="text"] {
+    border: 0;
+    font-family: "clanpro-book", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: 44px;
+    padding: 0 0 0 20px;
+    width: 380px;
+  }
+  button {
+    -webkit-appearance: none;
+    background: $magic-green;
+    border: 0;
+    color: white;
+    height: 44px;
+    padding: 0 0;
+    width: 50px;
+    span {
+      margin: 0 !important;
     }
-    width:50%;
-    padding:0 0 20px 0  !important;
+  }
+  div {
+    font-family: "clanpro-thin", sans-serif;
+  }
 
 }
 
-.uk-container{
-  background-color: #fff;
-  width:84.5%;
-  z-index:-5;
-  padding:0px !important;
-}
+//all texts on pictures
+.picture-text {
+  padding: 130px 103px !important;
+  position: relative !important;
+  width: 50% !important;
+  z-index: 2 !important;
+  margin-right: 0 !important;
 
-.footer{
-    padding:102px 145px 0 145px;
-    background-color: #000;
-    position: relative;
-    .main{
-        hr{
-            border-color: rgba(128, 128, 128, 0.315);
-        }
-        img{
-            color:white;
-            background-color: #111;
-        }
-        a{
-            text-decoration: none;
-            color:white;
-        }
-        a:hover{
-            color:gray;
-        }
-        span{
-            padding-right:10px;
-    
-        }
-        p{
-            color:$magic-white;
-        }
+  p {
+    padding-right: 150px;
+  }
+
+}
+.written{
+  padding-bottom: 60px;
+  a {
+    color: $magic-green !important;
+    &:hover {
+      color: $hover-green;
     }
-    .main.uk-card.uk-card-body{
-        background-color: #111;
-        width:300px !important;
-    }
-    .main:last-child{
-        padding-bottom:80px;
-    }
-
-    .countries{
-        font-size:15px;
-            div{
-                margin:4px  0 ;
-            }
-            a{
-                margin-left:7px;
-            }
-    }
-    .devide{
-
-        div{
-            margin-bottom:20px;
-        }
-        ul{
-            list-style-type: none;
-            padding-left: 0 !important;
-        }
-        li{
-            padding-bottom:12px;
-            color:white;
-        }
-    }
-    .header{
-        padding:10px 0;
-    }
+  }
 
 }
+//   pricing part
 
-.layout{
-    .left{
-        width:50%;
+.pricing {
+  padding-top: 80px;
+  // connect lines and dots
+  .connect-line {
+    background-color: #C6C6C6;
+    height: 61px;
+    margin-left: 20px;
+    margin-top: 22px;
+    position: absolute;
+    width: 1px;
+    z-index: 10;
+    &:before {
+      background-color: #F32F00;
+      border-radius: 50%;
+      border: 0.25px solid #F32F00;
+      bottom: -1.5px;
+      content: '';
+      height: 4.5px;
+      left: -2px;
+      position: absolute;
+      width: 4.5px;
     }
-    .right{
-        width:50%;
-        display: inline-block;
+    &:after {
+      background-color: #27AA0B;
+      border-radius: 50%;
+      border: 0.25px solid #27AA0B;
+      content: '';
+      height: 5px;
+      left: -2px;
+      position: absolute;
+      top: -3.5px;
+      width: 5px;
     }
+  }
+  h2 {
+    margin-bottom: 24px !important;
+    word-spacing: -10px;
+  }
+  p {
+    @include magic-header()
+  }
+  .pickup-box {
+    @include magic-inputbox();
+    padding: 11px;
+
+    i {
+      color: #C6C6C6;
+      font-size: 18px;
+      margin: 0 8px 0 -26px;
+      padding-left: 19px !important;
+    }
+    @include magic-input();
+  }
+  .destination-box {
+    @include magic-inputbox();
+    // arrow button
+    button {
+      margin-left: 21px !important;
+      padding: 4px 15.5px 4px 21px;
+      font-size: 20px !important;
+      right: 20px;
+      background-color: #C6C6C6;
+      border: 0;
+      text-align: center;
+      padding-left: 9px !important;
+      i {
+        color: white;
+      }
+      &:hover {
+        background-color: #C6C6C6;
+      }
+    }
+    span {
+      i {
+        color: white;
+        font-size: 19px;
+        margin-left: 2px;
+      }
+    }
+  }
+  .input-box {
+    margin-top: 2px;
+    padding: 10px 12px;
+    @include magic-input();
+  }
+  .uk-grid {
+    margin: 0 !important;
+  }
 }
 
-.uk-button{
-    font-size:14px;
-    font-weight:900 !important;
- 
-}
-.button-top{
-    padding-top:5px !important;
-    padding-left:20px!important;
-}
-.button-top-navbar{
-    padding:2.5px 12px 1.5px!important;
-    word-spacing: -2px;
-}
-.uk-button-secondary {
-    background-color: #fff !important ;
-    color:black !important ;
-   
-   
-}
-.uk-button-secondary:hover {
-  background-color: rgb(221, 217, 217) !important;
-}
-.uk-button-default:hover{
-    background-color: #fff !important;
-    color:black !important;
+//  slider buttons
+.uk-dotnav {
+  a {
+    background-color: $magic-white !important;
+    color: $magic-gray;
+    height: 13px;
+    width: 13px;
+  }
+  .uk-active a {
+    background-color: $magic-green !important;
+    height: 5px;
+    margin-top: 3px;
+    width: 5px;
+  }
 }
 
+.dots a {
+  background-color: $magic-green;
+  color: white;
+}
 
-#map {
-    width: 100%;
-    height: 400px;
+//slideshow cards
+.caption {
+  padding: 40px;
+}
+
+.s-card {
+  padding: 0 0 20px 0 !important;
+  width: 50%;
+  p {
+    margin: 16px;
+  }
+}
+
+//map part
+.map {
+  padding: 80px 0;
+  h2 {
+    margin-bottom: 24px;
+  }
+  .googlemap {
     background-color: grey;
+    height: 400px;
+    width: 100%;
+  }
 }
-#bottom{
-    margin-top:200px;
+
+//video
+.video {
+  background-color: #DDDDDD;
+  object {
+    background-color: #DDDDDD;
+    min-height: 600px;
+  }
 }
 
+//footer
+.footer {
+  background-color: #000;
+  padding: 102px 145px 0 145px;
+  position: relative;
 
+  .main {
+    hr {
+      border-color: rgba(128, 128, 128, 0.315);
+    }
+    a {
+      color: white;
+      font-size: 14px;
+      text-decoration: none;
+      &:hover {
+        color: gray;
+      }
+    }
+    span {
+      padding-right: 10px;
+    }
+  }
+  .countries {
+    padding: 0 0 !important;
+    .uk-grid {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    a, div {
+      font-size: 12px !important;
+    }
+  }
+  .divide {
+    div {
+      padding: 12px 20px;
 
+    }
+    svg {
+      fill: white;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0 !important;
+    }
+    li {
+      color: #ffffff;
+      padding-bottom: 18px;
+      cursor: pointer;
+    }
+    li:hover {
+      color: #c6c6c6;
+      padding-bottom: 18px;
+    }
+  }
+  .head-part {
+    padding: 10px 0;
+    background-color: #000;
+    img {
+      margin-top: 15px;
+    }
+  }
+}
 
+#bottom {
+  margin-top: 200px;
+}
 
+.uk-input {
+  padding: 25px 20px !important;
+  &:focus {
+    border-color: $magic-gray !important;
+  }
+}
 
+.uk-button {
+  height: 40px;
+  line-height: 42px !important;
+  font-weight: 800 !important;
+}
+a:hover {
+  text-decoration: none !important;
+}
+@media only screen and (max-width: 1000px) {
+  .uk-container {
+    width: 100%;
 
+  }
+  .section-one {
+    margin-left: 48px !important;
+    margin-right: 48px !important;
+  }
+  .section-two {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+  .part-two {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+  .uk-navbar {
+    padding-left: 48px !important;
+    padding-right: 48px !important;
+  }
+  .footer {
+    padding-left: 48px !important;
+    padding-right: 48px !important;
+  }
+}
 
-
-
-@media only screen and (max-width: 1000px) { 
-    .uk-container{
-        width:100%;
+/*# sourceMappingURL=styles.css.map */
  
-    }
-    .section-one{
-        margin-left: 48px !important;
-        margin-right: 48px !important;
-    }
-    .section-two{
-        padding-left: 5px !important;
-        padding-right: 5px !important;
-    }
-    .part-two{
-        padding-left: 5px !important;
-        padding-right: 5px !important;
-    }
-    .uk-navbar{
-        padding-left: 48px !important;
-        padding-right: 48px !important;
-    }
-    .footer{
-        padding-left: 48px !important;
-        padding-right: 48px !important;
-    }
-}
