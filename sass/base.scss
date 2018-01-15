@@ -25,7 +25,7 @@
 }
 
 @mixin magic-section {
-  padding: 0 145px 0 145px;
+  margin: 0 145px 0 145px;
   @include magic-button();
 }
 

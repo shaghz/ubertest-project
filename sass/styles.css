@@ -74,7 +74,7 @@ p {
 
 body {
   overflow-x: hidden;
-  padding: 0;
+  padding: 10;
   width: 100%;
   font-family: "clanpro-book", sans-serif !important;
   font-weight: 100;
@@ -240,7 +240,7 @@ body {
       color: white !important; }
   .section-one span {
     margin-right: 30px; }
-  .section-one .indivual {
+  .section-one .individual {
     margin-top: 12px; }
   .section-one a:hover {
     color: #0b5a5f; }
@@ -336,7 +336,8 @@ body {
     padding-right: 150px; }
 
 .written {
-  padding-bottom: 60px; }
+  padding-bottom: 60px;
+  width: 90%; }
   .written a {
     color: #178B94 !important; }
     .written a:hover {
@@ -540,7 +541,7 @@ a:hover {
     padding-left: 5px !important;
     padding-right: 5px !important; }
 
-  .part-two {
+  .magic-section {
     padding-left: 5px !important;
     padding-right: 5px !important; }
 
